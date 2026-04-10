@@ -456,5 +456,5 @@ flowchart LR
 
 ## File reference
 
-- Storyboard: `iterative_approximate_dag_storyboard.md`  
+- Storyboard: [`iterative_approximate_dag_storyboard.md`](iterative_approximate_dag_storyboard.md) (same folder)  
 - Earlier short diagrams: merged and superseded by this file for detail.

@@ -77,3 +77,5 @@ It implements **choosing how many refinement steps** each **iterative approximat
 ---
 
 *Storyboard for: iterative approximate DAG scheduling project · RTL simulation (FPGA optional)*
+
+**Related:** Detailed diagrams and module map → [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md)
