@@ -174,7 +174,7 @@ flowchart LR
 
 ## 5. Station B **internal** (iterative refinement datapath)
 
-Example: **multiplicative** normalize using **reciprocal** of normalized divisor `b` (Behroozi / SAADI-flavored).
+Example: **multiplicative** normalize using **reciprocal** of normalized divisor `b` (iterative approximate divide / SAADI-style refinement).
 
 ```mermaid
 flowchart TD

@@ -159,7 +159,7 @@ Makefile             sim, test, schedule, train, plot
 3. **FPGA demo** — UART print `L, k, cycles, error` (reuse prior UART experience).
 4. **SVA** — `cycles ≤ L` at DONE; optional formal on FSM.
 
-**Avoid as primary summer goal:** full LBOUND-SoC, unrelated repos, end-to-end neural divide.
+**Avoid as primary goal:** full SoC-scale integration, unrelated repos, end-to-end neural divide replacing Station B.
 
 ---
 
@@ -167,6 +167,8 @@ Makefile             sim, test, schedule, train, plot
 
 | File | Contents |
 |------|----------|
+| `00_START_HERE_READ_THESE_FOUR_DOCS.md` | Index of all four documents |
+| `01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md` | Full step-by-step presentation |
 | `iterative_approximate_dag_storyboard.md` | Plain-language cast, dials, deliverables |
 | `iterative_approximate_dag_diagram.md` | Mermaid + ASCII architecture |
 | `RESULTS.md` | *(create after sim)* measured numbers |

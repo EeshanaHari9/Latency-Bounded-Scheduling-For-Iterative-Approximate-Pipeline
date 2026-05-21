@@ -1,6 +1,10 @@
 # One-page storyboard: deadline-aware scheduling for a 3-stage iterative pipeline
 
+<<<<<<< HEAD
 **Theme:** A tiny “factory line” in hardware: three stations in a row, each can run **fast/rough** or **slow/careful**, under a **hard time budget**. This matches research on **iterative approximate arithmetic** and **scheduling** (DAG, latency limit, discrete quality modes).
+=======
+**Theme:** A tiny “factory line” in hardware: three stations in a row, each can run **fast/rough** or **slow/careful**, under a **hard time budget**. This matches research on **iterative approximate arithmetic** and **scheduling** under a **latency limit** and **discrete quality modes** (DAG: A → B → C).
+>>>>>>> 0b8d567 (Add presentation index and step-by-step walkthrough docs)
 
 ---
 
@@ -70,6 +74,15 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+## 7. Research framing (one sentence)
+
+It implements **choosing how many refinement steps** each **iterative approximate** stage uses **under a latency cap** in a **dependent pipeline**—scheduling **iterative approximate hardware** in a small application graph.
+
+---
+
+>>>>>>> 0b8d567 (Add presentation index and step-by-step walkthrough docs)
 *Storyboard for: iterative approximate DAG scheduling project · RTL simulation (FPGA optional)*
 
-**Related:** Detailed diagrams and module map → [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md)
+**Related:** Start at [`00_START_HERE_READ_THESE_FOUR_DOCS.md`](00_START_HERE_READ_THESE_FOUR_DOCS.md) · Full walkthrough → [`01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md`](01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md) · Diagrams → [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md)
