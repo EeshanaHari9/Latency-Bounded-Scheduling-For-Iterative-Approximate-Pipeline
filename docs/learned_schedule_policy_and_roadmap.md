@@ -1,4 +1,4 @@
-# Learned Schedule Policy, Summer Roadmap, and Resume Strategy
+# Learned Schedule Policy
 
 **Project:** Latency-bounded iterative approximate pipeline  
 **Repository:** `Latency-Bounded-Scheduling-For-Iterative-Approximate-Pipeline`  
