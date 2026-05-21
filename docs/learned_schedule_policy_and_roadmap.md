@@ -39,7 +39,7 @@ See `iterative_approximate_dag_storyboard.md` and `iterative_approximate_dag_dia
 
 ---
 
-## 3. Why learned scheduling (not other AI add-ons)
+## 3. Why learned scheduling
 
 | Option | Resume / credibility | Keep RTL central? |
 |--------|----------------------|-------------------|
@@ -127,7 +127,7 @@ Makefile             sim, test, schedule, train, plot
 
 ---
 
-## 7. Resume bullets (fill after measurement)
+## 7. Fill after Measurement
 
 **RTL (lead):**
 
@@ -173,4 +173,4 @@ Makefile             sim, test, schedule, train, plot
 
 ---
 
-*This document captures the agreed direction: RTL pipeline + optimal schedule baseline + learned policy validation for resume and research credibility.*
+*This document captures the agreed direction: RTL pipeline + optimal schedule baseline + learned policy validation
