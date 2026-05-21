@@ -70,12 +70,6 @@
 
 ---
 
-## 7. Why this fits Behroozi-aligned research (one sentence)
-
-It implements **choosing how many refinement steps** each **iterative approximate** stage uses **under a latency cap** in a **dependent pipeline**—the same structural problem as scheduling **iterative approximate hardware** in an application graph, at student scale.
-
----
-
 *Storyboard for: iterative approximate DAG scheduling project · RTL simulation (FPGA optional)*
 
 **Related:** Detailed diagrams and module map → [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md)
