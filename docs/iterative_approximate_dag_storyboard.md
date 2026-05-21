@@ -1,6 +1,6 @@
 # One-page storyboard: deadline-aware scheduling for a 3-stage iterative pipeline
 
-**Theme:** A tiny “factory line” in hardware: three stations in a row, each can run **fast/rough** or **slow/careful**, under a **hard time budget**. This matches research on **iterative approximate arithmetic** and **scheduling** (Behroozi-style: DAG, latency limit, discrete quality modes).
+**Theme:** A tiny “factory line” in hardware: three stations in a row, each can run **fast/rough** or **slow/careful**, under a **hard time budget**. This matches research on **iterative approximate arithmetic** and **scheduling** (DAG, latency limit, discrete quality modes).
 
 ---
 
