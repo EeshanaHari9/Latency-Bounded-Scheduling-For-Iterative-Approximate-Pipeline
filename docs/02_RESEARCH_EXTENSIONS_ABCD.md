@@ -221,11 +221,52 @@ FPGA demo remains **optional**; not required for A–D.
 
 ---
 
+## Publication target: DAC (64th, 2027)
+
+**Conference:** [DAC](https://dac.com) — Design Automation Conference · **DAC 2027** in San Jose (~July 2027).  
+**Research track:** Up to **6 pages + 1 page references only**; double-blind; original unpublished work.  
+**Expected submission window (follow [dac.com](https://dac.com) when posted):** ~**November 2026** (abstract ~1 week before full PDF), based on the DAC 2026 cycle (Nov 2025 submit → DAC 2026).
+
+### Timeline aligned with your plan
+
+| When | Work |
+|------|------|
+| **Summer 2026** | Implement Ext-A…D; fill `RESULTS.md` with numbers and plots |
+| **Sep–Oct 2026** | Paper outline, figures, related work (Behroozi ISVLSI 2021 + AHLS/DAC approximate scheduling line) |
+| **~Nov 2026** | DAC 2027 research manuscript + abstract submit |
+| **Jul 2027** | Presentation if accepted |
+
+### How to frame for DAC reviewers
+
+DAC cares about **design automation**, not only RTL. Lead with:
+
+1. **Problem:** Co-optimizing **iteration latency** and **output quality** under a **hard cycle budget** in approximate datapaths (common in HLS and custom accelerators).
+2. **Method:** Oracle scheduling (ILP/exhaustive on A→B→C) + **cycle-accurate RTL** + **early-stop under cap** + optional **compressed schedule** + **checked deadline property**.
+3. **Results:** Pareto-style **error vs `L`**, **cycles saved** (Ext-B), **storage vs accuracy** (Ext-C), comparison to **fixed-k** and **always-max-k** baselines.
+
+**Position vs prior work:** Extend iterative-hardware scheduling (Behroozi et al.) with a **verified hardware instance**, **runtime early termination**, and **formal deadline compliance**—not a new abstract scheduler alone.
+
+### What to strengthen for a competitive DAC submission
+
+| Gap for DAC | Mitigation |
+|-------------|------------|
+| Single 3-node chain feels small | Add **second case study** (e.g. small FIR tap or PoE-style chain from Behroozi paper) using same flow |
+| No HLS comparison | Cite AHLS / variable-cycle HLS papers; optional: generate one schedule from open-source HLS or hand-map to your ILP |
+| Energy not measured | Add **cycle-count × activity** proxy or FPGA power sample on scheduled vs max-k |
+| Learned schedule weak alone | Keep Ext-C as **compression** subsection; headline **Ext-B + Ext-A** |
+| Reproducibility | Public repo + `make reproduce` before submit |
+
+### If DAC desk-rejects or TPC pass is tight
+
+Backup same story: **DATE**, **ASP-DAC**, **ISVLSI** (Behroozi venue), **CASES**—shorter revision cycle, similar audience.
+
+---
+
 ## Related docs
 
 | File | Role |
 |------|------|
-| [`00_START_HERE_READ_THESE_FOUR_DOCS.md`](00_START_HERE_READ_THESE_FOUR_DOCS.md) | Index (updated to five docs) |
+| [`00_START_HERE_READ_THESE_FOUR_DOCS.md`](00_START_HERE_READ_THESE_FOUR_DOCS.md) | Doc index |
 | [`01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md`](01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md) | Implementation walkthrough aligned with A–D |
 | [`learned_schedule_policy_and_roadmap.md`](learned_schedule_policy_and_roadmap.md) | Ext-C detail + phased roadmap |
 | [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md) | Signals for early-stop, ILP, SVA |
