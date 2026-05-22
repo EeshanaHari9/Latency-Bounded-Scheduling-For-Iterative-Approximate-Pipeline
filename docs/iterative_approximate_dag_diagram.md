@@ -2,7 +2,7 @@
 
 Use a Markdown viewer with **Mermaid**, or [mermaid.live](https://mermaid.live). **ASCII** sections work in any terminal.
 
-**Notation:** `W` = fixed-point width (e.g. 16 or 24). `k` = iteration count for Station B. `L` = max cycles per end-to-end **job**.
+**Notation:** `W` = fixed-point width (e.g. 16 or 24). `k_max` = max iterations for Station B (`i_done ≤ k_max` with **Ext-B**). `L` = max cycles per end-to-end **job**. Extensions: [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md).
 
 ---
 
@@ -13,11 +13,13 @@ flowchart TB
   subgraph OFF["Offline toolchain"]
     CHAR["Characterize Station B:<br/>error vs k on sample inputs"]
     MODEL["Error model:<br/>e_C ≈ g(e_A, e_B(k))"]
-    OPT["Optimizer:<br/>exhaustive search or tiny ILP<br/>per (L_bucket, class)"]
-    ART["Artifacts:<br/>schedule.hex, report.json"]
+    ILP["ilp_schedule.py (Ext-A)"]
+    OPT["build_schedule.py:<br/>k* per (L_bucket, class)"]
+    ART["schedule.hex, timing.json"]
     CHAR --> MODEL
     MODEL --> OPT
-    OPT --> ART
+    OPT --> ILP
+    ILP --> ART
   end
 
   subgraph DUT["RTL design under test"]
@@ -95,8 +97,11 @@ flowchart LR
 | `z0` | Initial accumulator for **Station C** (often 0). |
 | `segment_class_id` | Selects **row** in schedule table (e.g. “quiet” vs “busy” input regime). |
 | `csr_deadline_L` | Max **total** cycles for A+B+C for this job (or use discrete **bucket** index). |
-| `k` | Latency–quality dial for **B** only; comes from LUT output. |
-| `cycle_count_seen` | Exposed for TB to assert **≤ L**. |
+| `k` / `k_max` | Max refinement steps for **B** (from LUT). **Ext-B:** actual steps **`i_done ≤ k_max`**. |
+| `epsilon` | Early-stop residual threshold (**Ext-B**); CSR or ROM field. |
+| `iter_count_out` | Iterations executed in B (**Ext-B** logging). |
+| `early_stop` | High if B finished before **k_max** (**Ext-B**). |
+| `cycle_count_seen` | Exposed for TB and **Ext-D** SVA (**≤ L** at `out_valid`). |
 
 ---
 
@@ -114,7 +119,8 @@ flowchart TD
   end
 
   subgraph ROW["One ROM word (example fields)"]
-    K["k : 2..Kmax"]
+    K["k_max : 2..Kmax"]
+    EPS["epsilon bucket (Ext-B, optional)"]
     FLAGS["valid, reserved"]
   end
 
@@ -355,8 +361,9 @@ flowchart TB
     ABS["absolute error |y-y_ref|"]
     REL["optional relative ULP"]
     LAT["cycles ≤ L"]
-    KOK["k matches ROM expectation"]
-    LOG["CSV: L,k,error,cycles"]
+    SVA["Ext-D: SVA bind deadline_props"]
+    KOK["k_max matches ROM expectation"]
+    LOG["CSV: L,k_max,i_done,error,cycles,early_stop"]
   end
 
   GEN --> DUT2
@@ -447,14 +454,34 @@ flowchart LR
 | Address | `sched_addr_gen.sv` | Concatenate **L_bucket** and **class_id**. |
 | FSM | `pipeline_ctrl.sv` | Drives `start_a`, `en_b_iter`, `start_c`, `busy`. |
 | Multiply | `stage_mul.sv` | Fixed-point; document **Q format**. |
-| Iter norm | `stage_norm_iter.sv` | **k**-bounded loop; internal mult pipeline. |
+| Iter norm | `stage_norm_iter.sv` | **k_max**-bounded loop; **Ext-B** early-stop on residual. |
+| Formal | `deadline_props.sv` | **Ext-D:** `out_valid |-> cycle_count_seen <= L`. |
+| ILP oracle | `sw/ilp_schedule.py` | **Ext-A:** same labels as `build_schedule.py`. |
+| Learned ROM | `data/schedule_learned.hex` | **Ext-C:** from `train_schedule.py`. |
 | Accum | `stage_acc.sv` | Wide enough to avoid overflow for test range. |
 | CSR | `csr_regs.sv` | **L**, **class**, **status** (done, err). |
 | Top | `top_iter_pipeline.sv` | Tie + parameters `W`, `KMAX`. |
 
 ---
 
+## 14. Ext-B — Station B loop with early-stop
+
+```mermaid
+flowchart TD
+  START["start, k_max, epsilon"] --> INIT["normalize + seed R"]
+  INIT --> LOOP{"i < k_max ?"}
+  LOOP -->|no| DONE["b_done, q out"]
+  LOOP -->|yes| STEP["one NR / Taylor step"]
+  STEP --> RES{"|residual| < epsilon ?"}
+  RES -->|yes| EARLY["early_stop=1, b_done"]
+  RES -->|no| INC["i++"] --> LOOP
+```
+
+Worst-case cycles still use **k_max** for offline feasibility; measured cycles use **i_done**.
+
+---
+
 ## File reference
 
-- Storyboard: [`iterative_approximate_dag_storyboard.md`](iterative_approximate_dag_storyboard.md) (same folder)  
-- Earlier short diagrams: merged and superseded by this file for detail.
+- Extensions spec: [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md)  
+- Storyboard: [`iterative_approximate_dag_storyboard.md`](iterative_approximate_dag_storyboard.md)

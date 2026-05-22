@@ -1,19 +1,20 @@
 # Project documentation — read in this order
 
-This folder contains **four documents** for the **latency-bounded iterative approximate pipeline** project. Start here, then follow the list below.
+This folder documents the **latency-bounded iterative approximate pipeline** and its **four research extensions (Ext-A … Ext-D)**. Start here, then follow the list below.
 
 **Repository:** [Latency-Bounded-Scheduling-For-Iterative-Approximate-Pipeline](https://github.com/EeshanaHari9/Latency-Bounded-Scheduling-For-Iterative-Approximate-Pipeline)
 
 ---
 
-## The four documents
+## Documents
 
 | # | File | What it is | Who should read it |
 |---|------|------------|-------------------|
-| **1** | [`01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md`](01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md) | **Main presentation.** Problem, vocabulary, end-to-end flow, every block broken into sub-blocks, implementation order, software path, learned-schedule extension, key diagrams inline. | **Read this first** for a full walkthrough. |
-| **2** | [`iterative_approximate_dag_storyboard.md`](iterative_approximate_dag_storyboard.md) | **One-page storyboard.** Plain-language cast (Station A/B/C + scheduler), dials, one-job flow, target plot, mini glossary. | Quick mental model; good for a 5-minute overview. |
-| **3** | [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md) | **Detailed diagrams.** Full Mermaid set (system, signals, scheduler, Station B internals, FSM, sequence, offline flow, timing budget, testbench, ASCII bus picture, RTL file checklist). | Reference while implementing or reviewing architecture. |
-| **4** | [`learned_schedule_policy_and_roadmap.md`](learned_schedule_policy_and_roadmap.md) | **Learned schedule + roadmap.** Why ML sits on the scheduler only, offline train/export flow, evaluation tables, phased build plan, repo layout. | After you understand the RTL core; before building phase F (ML). |
+| **1** | [`01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md`](01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md) | **Main walkthrough.** Problem, vocabulary, blocks, implementation order, metrics—aligned with Ext-A…D. | **Read first** for full detail. |
+| **2** | [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md) | **Extension spec.** Ext-A (RTL + ILP oracle), Ext-B (early-stop), Ext-C (learned ROM), Ext-D (SVA); build order, exit criteria, evaluation matrix. | **Scope and checklist** before coding. |
+| **3** | [`iterative_approximate_dag_storyboard.md`](iterative_approximate_dag_storyboard.md) | **One-page storyboard.** Cast, dials, one-job flow, deliverables. | 5-minute overview. |
+| **4** | [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md) | **Diagrams.** Mermaid + ASCII; signals for early-stop and formal checks. | While implementing RTL/TB. |
+| **5** | [`learned_schedule_policy_and_roadmap.md`](learned_schedule_policy_and_roadmap.md) | **Ext-C detail** + build phases 1–9. | Before `train_schedule.py`. |
 
 ---
 
@@ -23,20 +24,21 @@ This folder contains **four documents** for the **latency-bounded iterative appr
 00_START_HERE (this file)
         │
         ▼
-01_PROJECT_WALKTHROUGH  ─── full step-by-step (presentation)
+02_RESEARCH_EXTENSIONS_ABCD  ─── scope: what Ext-A…D mean
         │
-        ├──► 02 storyboard     (short recap)
-        ├──► 03 diagrams      (deep reference + all figures)
-        └──► 04 learned policy (ML extension + schedule)
+        ▼
+01_PROJECT_WALKTHROUGH  ─── how to build it step by step
+        │
+        ├──► storyboard (short recap)
+        ├──► diagrams (signals + FSM)
+        └──► learned policy (Ext-C)
 ```
-
-**For a live presentation:** Use **document 1** as the script; open **document 3** for backup slides (diagrams). Keep **document 2** as the closing “one slide” summary.
 
 ---
 
 ## What the project is (one paragraph)
 
-A **simulated hardware pipeline** processes each **job** in three stages: **multiply** (fixed time) → **iterative normalize/divide** (variable quality, knob **`k`**) → **accumulate** (fixed time). A **scheduler** picks **`k`** so total clock cycles **`≤ L`** (deadline). Software **precomputes** good **`k`** values (exhaustive search, then optionally a **learned model** validated against that table). Results are **measured** in simulation: error vs deadline, compared to naive policies.
+A **simulated fixed-point pipeline** (multiply → **iterative** normalize/divide → accumulate) runs each **job** under a cycle deadline **`L`**. A **scheduler** picks refinement depth **`k`** (and, with **Ext-B**, may stop early before the cap). **Ext-A** implements the pipeline in RTL with **measured** stage latencies and proves ROM choices match an **exhaustive/ILP oracle**. **Ext-B** adds **deadline-aware early-stop** in Station B. **Ext-C** adds a **compressed learned schedule** validated against the gold table. **Ext-D** adds a **formal SVA guarantee** that scheduled jobs finish with **`cycles ≤ L`**. Evaluation is simulation-first (FPGA optional).
 
 ---
 
@@ -44,11 +46,11 @@ A **simulated hardware pipeline** processes each **job** in three stages: **mult
 
 | Component | Status |
 |-----------|--------|
-| Architecture docs | Complete (this folder) |
-| RTL (`rtl/`) | Planned / in progress |
+| Architecture + Ext-A…D docs | Complete (this folder) |
+| RTL (`rtl/`) | Planned |
 | Software (`sw/`) | Planned |
-| Measured results (`RESULTS.md`) | After simulation runs |
+| `docs/RESULTS.md` | After simulation runs |
 
 ---
 
-*Index last updated: 2026-05-19*
+*Index last updated: 2026-05-21*

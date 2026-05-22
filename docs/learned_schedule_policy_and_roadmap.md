@@ -1,178 +1,174 @@
-# Learned Schedule Policy
+# Learned schedule policy, extensions, and summer roadmap
 
 **Project:** Latency-bounded iterative approximate pipeline  
 **Repository:** `Latency-Bounded-Scheduling-For-Iterative-Approximate-Pipeline`  
-**Status:** Planning / documentation (RTL implementation in progress)  
-**Last updated:** 2026-05-19  
+**Status:** Planning / documentation (RTL not yet in repo)  
+**Last updated:** 2026-05-21  
 
 ---
 
 ## 1. Executive summary
 
-The **hardware thesis** stays fixed in RTL: a three-stage fixed-point pipeline (**multiply → iterative normalize → accumulate**) with a **per-job cycle deadline `L`** and discrete iteration count **`k`** on the approximate stage.
+**Hardware core:** Fixed-point pipeline **multiply → iterative normalize → accumulate**, per-job deadline **`L`**, refinement cap **`k_max`** on Station B.
 
-The recommended **AI extension** (best for resume + credibility while keeping RTL central):
+**Full research scope** = core + four extensions (**Ext-A … Ext-D**). Canonical spec: [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md).
 
-> **Learned schedule policy** — train a small offline model to predict optimal **`k`** under deadline constraints, then **validate against an exhaustive/ILP-generated gold schedule** (full ROM table).
+| Extension | Role |
+|-----------|------|
+| **Ext-A** | RTL + measured latencies; ROM from exhaustive/**ILP** oracle |
+| **Ext-B** | **Early-stop** in B under **`k_max`** (main algorithmic add-on) |
+| **Ext-C** | **This file’s focus:** learned/compressed ROM vs gold |
+| **Ext-D** | SVA **`cycles ≤ L`** on scheduled completion |
 
-AI assists **how the ROM is built and evaluated**; it does **not** replace the iterative datapath or the deadline semantics in hardware.
+Ext-C does **not** replace Station B; it only changes how **`schedule*.hex`** is produced.
 
 ---
 
-## 2. Architecture (unchanged RTL core)
+## 2. Architecture
 
 | Block | Module | Role |
 |-------|--------|------|
 | Station A | `stage_mul` | Fixed-latency multiply |
-| Station B | `stage_norm_iter` | Iterative normalize / divide; quality knob **`k`** |
+| Station B | `stage_norm_iter` | Iterative normalize; **`k_max`** cap; **Ext-B** early-stop |
 | Station C | `stage_acc` | Fixed-latency accumulate |
-| Manager | `sched_rom` + `pipeline_ctrl` | Pick **`k`**, enforce **`cycles ≤ L`** |
+| Manager | `sched_rom` + `pipeline_ctrl` | ROM → **`k_max`** (and optional **ε**); cycle counter |
 
-**Cycle budget (parameters):**
+**Worst-case cycle budget:**
 
 ```text
-cycles_total = TA + k * TB_per_iter + TC
-cycles_total ≤ L
+cycles_worst = TA + k_max * TB_per_iter + TC
+cycles_worst ≤ L
 ```
 
-See `iterative_approximate_dag_storyboard.md` and `iterative_approximate_dag_diagram.md` for cast, FSM, and interfaces.
-
----
-
-## 3. Why learned scheduling
-
-| Option | Resume / credibility | Keep RTL central? |
-|--------|----------------------|-------------------|
-| **Learned schedule (recommended)** | Gold baseline = optimal table; clear metrics (miss rate, error gap, storage) | **Yes** |
-| Classifier for `segment_class_id` only | Weaker alone; use as **feature** for schedule model | Yes |
-| Learned early-stop in Station B | Strong but harder to verify; best as **phase 2** | Alters B behavior |
-| End-to-end NN replaces divide | **Avoid** — loses SAADI/iterative story | No |
-
-**Credibility rule:** Show learned policy is **close to provably good** labels from exhaustive search or tiny ILP per `(L_bucket, class, features)`.
-
----
-
-## 4. Learned schedule policy — design
-
-### 4.1 Offline pipeline (Python)
-
-1. **Characterize Station B:** error vs `k` on a grid of operands (fixed-point golden reference).
-2. **Label optimal `k*`** for each sample:
-   - Maximize quality (minimize final error) subject to `TA + k·TB + TC ≤ L`.
-3. **Features** (examples):
-   - `L` or `L_bucket_id`
-   - `segment_class_id` (optional)
-   - Operand stats: divisor magnitude bucket, ill-conditioned flag, exponent diff
-4. **Train small model:**
-   - Start with **decision tree** or **logistic regression** (interpretable, easy to export).
-   - Optional: tiny MLP if tree is insufficient.
-5. **Export:**
-   - **V1 (minimum):** predictions written to **`schedule.hex`** (same ROM format as exhaustive table).
-   - **V2 (optional):** shallow tree exported as **LUT / comparators** in RTL.
-
-### 4.2 Hardware (unchanged interface)
-
-- ROM still outputs **`k`** to `stage_norm_iter`.
-- Controller still asserts **`cycle_count ≤ L`** at job completion.
-- ML does **not** change A/B/C algorithms in v1.
-
-### 4.3 Evaluation (required for resume)
-
-| Metric | Baseline A | Baseline B | Proposed |
-|--------|------------|------------|----------|
-| Deadline miss rate | Always max-`k` | Always min-`k` | Learned schedule |
-| Mean / max final error | (same) | (same) | vs **optimal table** |
-| Config size | Full table | — | Learned model / compressed ROM |
-
-**Flagship figure:** Final error vs **`L`** — three curves: **scheduled (learned or table)**, **always-min-k**, **always-max-k** (mark violations).
-
-**Ablations table:**
-
-- Learned vs **exhaustive optimal** table: % jobs matching `k*`, mean error degradation.
-- Optional: ROM entries vs tree depth (storage).
-
----
-
-## 5. Compressed summer roadmap
-
-Assumes **full-time** work; adjust if part-time.
-
-| Phase | Duration | Deliverable |
-|-------|----------|-------------|
-| **A — Core RTL** | ~1–2 weeks | `stage_mul`, `stage_norm_iter`, `stage_acc`, unit TBs, golden model |
-| **B — Integration** | ~1 week | `pipeline_ctrl`, `top_iter_pipeline`, cycle counter |
-| **C — Optimal schedule** | ~1 week | `build_schedule.py`, exhaustive labels, ROM, deadline asserts |
-| **D — Results** | ~3–5 days | Flagship plot + `RESULTS.md` with numbers |
-| **E — CI / hygiene** | ~2–3 days | Verilator `make test`, GitHub Actions |
-| **F — Learned policy** | ~1–2 weeks | Train model, ablations vs optimal table |
-| **G — Optional wow** | ~2–3 weeks | Pick **one:** FPGA UART demo, early-stop in B, or tree-in-RTL |
-
-**Resume-worthy MVP (no ML):** ~3–4 weeks.  
-**Impressive summer version:** MVP + **phase F** (+ optional G).
-
----
-
-## 6. Repository layout (target)
+**Actual cycles (Ext-B):**
 
 ```text
-rtl/                 stage_mul, stage_norm_iter, stage_acc, sched_rom, pipeline_ctrl, top
-tb/                  Verilator testbench, scoreboard
-sw/                  golden_model.py, build_schedule.py, train_schedule.py, plot_results.py
-data/                schedule.hex, schedule_learned.hex, test_vectors/
-results/             sweeps/*.csv, plots/*.png
-docs/                storyboard, diagram, this file, RESULTS.md
-Makefile             sim, test, schedule, train, plot
-.github/workflows/   ci.yml
+cycles_actual = TA + i_done * TB_per_iter + TC
+i_done ≤ k_max
 ```
 
 ---
 
-## 7. Fill after Measurement
+## 3. Ext-C — Learned schedule policy
 
-**RTL (lead):**
+### 3.1 Why learned scheduling (within full project)
 
-> Implemented deadline-aware fixed-point pipeline in SystemVerilog (multiply → iterative normalize → accumulate) with table-driven iteration budgeting under per-job cycle cap **L**; Verilator regression with **100%** deadline compliance on scheduled runs.
+| Approach | Role in full project |
+|--------|----------------------|
+| **Gold ROM (Ext-A)** | Oracle labels; required baseline |
+| **Early-stop (Ext-B)** | Primary hardware novelty |
+| **Learned ROM (Ext-C)** | Storage/compression study vs gold |
+| **NN replaces divide** | **Out of scope** |
 
-**ML extension (second clause, after phase F):**
+**Credibility rule:** Learned policy must be compared to **ILP/exhaustive gold** from Ext-A, not standalone.
 
-> Trained lightweight schedule model to select refinement depth **k**; matched offline-optimal iteration budgets on **N%** of jobs within **E%** mean error vs full lookup table.
+### 3.2 Offline pipeline (Python)
 
-**Do not claim** ML on resume until phase F metrics exist.
+1. Characterize Station B: error vs **`k`** (`characterize_b.py`).
+2. Gold labels **`k*`** per `(L_bucket, class)` — `build_schedule.py` + cross-check `ilp_schedule.py`.
+3. Features: `L_bucket`, `class_id`, optional divisor magnitude / ill-conditioned flag.
+4. Train **decision tree** or **logistic** (`train_schedule.py`).
+5. Export **`data/schedule_learned.hex`** (same layout as gold).
+6. Optional: shallow tree in `rtl/sched_tree.sv` if time.
+
+### 3.3 Evaluation (Ext-C)
+
+| Metric | vs |
+|--------|-----|
+| Deadline miss rate | Must be **0%** on feasible rows |
+| **`k` match rate** | Gold **`k*** |
+| Mean / max error gap | Gold-scheduled runs |
+| ROM / model size | Full `schedule.hex` |
+
+**Ablations:** remove Ext-B from sweep (fixed-**k** only) when isolating learned **`k`** choice.
 
 ---
 
-## 8. Using AI coding assistants (ChatGPT, Claude, Cursor)
+## 4. Summer roadmap (build phases 1–9)
+
+Assumes full-time summer; adjust if part-time.
+
+| Phase | Duration | Extension | Deliverable |
+|-------|----------|-----------|-------------|
+| **1** | ~1–2 wk | — | `stage_norm_iter` (fixed **k**), unit TB, golden |
+| **2** | ~0.5–1 wk | — | `stage_mul`, `stage_acc` |
+| **3** | ~1 wk | Ext-A start | `pipeline_ctrl`, `top_iter_pipeline`, cycle counter |
+| **4** | ~1 wk | **Ext-A** | `build_schedule.py`, `ilp_schedule.py`, `schedule.hex`, 0% misses |
+| **5** | ~3–5 d | **Ext-A** | Sweeps, error vs **L**, `RESULTS.md` draft |
+| **6** | ~1–1.5 wk | **Ext-B** | Early-stop in B, cycles vs error plot |
+| **7** | ~1–2 wk | **Ext-C** | `train_schedule.py`, ablation table |
+| **8** | ~0.5–1 wk | **Ext-D** | `deadline_props.sv`, `make test`, CI |
+| **9** | optional | — | FPGA UART demo |
+
+**Minimum before Ext-C:** Phases 1–5 (gold ROM + measurements).  
+**Do not skip Ext-A** to train learned schedule — no oracle without gold table.
+
+---
+
+## 5. Repository layout (target)
+
+```text
+rtl/
+  stage_mul.sv, stage_norm_iter.sv, stage_acc.sv
+  sched_rom.sv, sched_addr_gen.sv, pipeline_ctrl.sv
+  top_iter_pipeline.sv, csr_regs.sv
+  assertions/deadline_props.sv
+tb/
+  tb_top.sv, scoreboard.sv
+sw/
+  golden_model.py, characterize_b.py
+  build_schedule.py, ilp_schedule.py
+  train_schedule.py, plot_results.py
+data/
+  schedule.hex, schedule_learned.hex, timing.json
+results/
+docs/
+  02_RESEARCH_EXTENSIONS_ABCD.md, RESULTS.md
+Makefile
+.github/workflows/ci.yml
+```
+
+---
+
+## 6. Resume / report bullets (after measurement)
+
+**Core + Ext-A:**
+
+> Cycle-accurate SystemVerilog pipeline with table-driven iteration budgeting under per-job cap **L**; ROM matches ILP/exhaustive oracle on A→B→C graph; **100%** deadline compliance on scheduled runs.
+
+**Ext-B (add if implemented):**
+
+> Deadline-aware early-stop in iterative normalize stage: **i_done ≤ k_max**, reduced mean cycles vs fixed-**k** at same **L**.
+
+**Ext-C (add if implemented):**
+
+> Learned schedule compressed ROM vs gold: **N%** **k** match, **E%** mean error gap, **B** bytes saved.
+
+**Ext-D (add if implemented):**
+
+> SVA proof obligation **`cycle_count ≤ L`** at job completion for scheduled policies.
+
+---
+
+## 7. Using AI coding assistants
 
 | Appropriate | You must own |
 |-------------|----------------|
-| Makefile / Verilator scaffolding | Fixed-point format, **TA/TB/TC** budget |
-| Test vector generation, plot scripts | Flagship figure interpretation |
-| Debug hints, doc drafts | Architecture and all resume numbers |
-| `train_schedule.py` structure | Label definition, comparison to optimal |
+| Makefile / Verilator scaffolding | **TA/TB/TC**, fixed-point format |
+| `ilp_schedule.py`, `train_schedule.py` skeletons | Label definition, oracle agreement |
+| Plot scripts | Figure interpretation, all reported numbers |
 
 ---
 
-## 9. Extensions (priority after learned schedule)
-
-1. **Early-stop** in Station B — same `k` cap, exit when residual &lt; ε; compare cycles vs error.
-2. **Input class features** — feed classifier output into schedule model.
-3. **FPGA demo** — UART print `L, k, cycles, error` (reuse prior UART experience).
-4. **SVA** — `cycles ≤ L` at DONE; optional formal on FSM.
-
-**Avoid as primary goal:** full SoC-scale integration, unrelated repos, end-to-end neural divide replacing Station B.
-
----
-
-## 10. Related docs
+## 8. Related docs
 
 | File | Contents |
 |------|----------|
-| `00_START_HERE_READ_THESE_FOUR_DOCS.md` | Index of all four documents |
-| `01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md` | Full step-by-step presentation |
-| `iterative_approximate_dag_storyboard.md` | Plain-language cast, dials, deliverables |
-| `iterative_approximate_dag_diagram.md` | Mermaid + ASCII architecture |
-| `RESULTS.md` | *(create after sim)* measured numbers |
+| `02_RESEARCH_EXTENSIONS_ABCD.md` | Full Ext-A…D spec + holistic evaluation matrix |
+| `01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md` | Step-by-step implementation |
+| `iterative_approximate_dag_diagram.md` | Signals, FSM, SVA notes |
+| `00_START_HERE_READ_THESE_FOUR_DOCS.md` | Doc index |
 
 ---
 
-*This document captures the agreed direction: RTL pipeline + optimal schedule baseline + learned policy validation
+*RTL pipeline + Ext-A oracle + Ext-B early-stop + Ext-C learned ROM + Ext-D formal check = agreed full project scope.*

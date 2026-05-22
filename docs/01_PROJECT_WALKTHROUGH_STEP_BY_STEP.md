@@ -14,12 +14,16 @@ Many embedded pipelines must finish a chain of operations before a **deadline** 
 
 > For each incoming job, how many refinement iterations **`k`** should we run so we **never exceed** cycle budget **`L`**, while keeping the **final numeric error** as small as possible?
 
-**Approach:**
+**Approach (full scope — extensions Ext-A … Ext-D):**
 
-1. Build the pipeline in **RTL** (hardware description) and simulate it.
-2. **Precompute** good values of **`k`** in software (exhaustive search → lookup table in ROM).
-3. Optionally **train a small model** to predict **`k`** and prove it matches the precomputed table.
-4. **Measure** error and deadline compliance vs simple baselines (always min-`k`, always max-`k`).
+1. Build the pipeline in **RTL** and **measure** `TA`, `TB_per_iter`, `TC` (**Ext-A**).
+2. **Precompute** optimal **`k*`** (exhaustive + **ILP oracle** on the A→B→C graph) → ROM **`schedule.hex`** (**Ext-A**).
+3. Add **early-stop** in Station B: **`k_max`** cap + residual **ε** (**Ext-B**).
+4. **Train/export** a compressed learned schedule; ablate vs gold ROM (**Ext-C**).
+5. **Assert** `cycle_count ≤ L` at job done via SVA (**Ext-D**).
+6. **Measure** vs baselines (always min-`k`, always max-`k`, fixed-`k` ROM, early-stop, learned).
+
+Extension spec and exit criteria: [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md).
 
 ---
 
@@ -30,18 +34,21 @@ Many embedded pipelines must finish a chain of operations before a **deadline** 
 | **Job** | One end-to-end run: operands go in, one result comes out. |
 | **Cycle** | One rising edge of the clock; the unit of time in simulation. |
 | **Deadline `L`** | Maximum cycles allowed for this job (entire A→B→C path). |
-| **`k`** | Number of **refinement iterations** in Station B only (e.g. 2, 4, or 6). |
+| **`k` / `k_max`** | **Maximum** refinement iterations in Station B (e.g. 2, 4, or 6). With **Ext-B**, actual iterations **`i_done ≤ k_max`**. |
+| **`ε` (epsilon)** | Early-stop threshold on residual in Station B (**Ext-B**). |
+| **`i_done`** | Iterations actually executed in B (≤ **`k_max`**). |
 | **`TA`, `TC`** | Fixed cycle costs of Station A and Station C (constants you measure from RTL). |
 | **`TB_per_iter`** | Cycles consumed by **one** refinement step in Station B. |
 | **Cycle budget** | `TA + k × TB_per_iter + TC` must be **≤ `L`**. |
 | **RTL** | SystemVerilog/Verilog source that describes digital logic. |
 | **Fixed-point** | Integers with an agreed binary point (e.g. Q1.15); no floating-point unit required. |
 | **Golden model** | High-precision reference (Python/C) used to score hardware output. |
-| **Scheduler / ROM** | Hardware that outputs **`k`** for this job based on **`L`** (and optional **class**). |
+| **Scheduler / ROM** | Hardware that outputs **`k_max`** (and optional **ε**) from **`L`** bucket and **class**. |
 | **DAG** | Directed acyclic graph of dependencies; here simply **A → B → C** (a chain). |
 | **CSR** | Control/status register; testbench or host sets **`L`**, reads **status**. |
 | **Station A / B / C** | The three processing blocks in order. |
-| **Learned schedule** | Small ML model that predicts **`k`**; validated against exhaustive optimal table. |
+| **Learned schedule (Ext-C)** | Compressed policy predicting **`k*`**; validated against gold ROM from Ext-A. |
+| **Ext-A … Ext-D** | Research extensions: oracle RTL, early-stop, learned ROM, formal deadline (**see doc 02**). |
 
 ---
 
@@ -65,8 +72,8 @@ Compare result to golden model; assert **cycles ≤ L**; log CSV for plots.
 flowchart TB
   subgraph OFF["Offline (Python)"]
     CHAR["Characterize B: error vs k"]
-    OPT["Build schedule: pick k per L, class"]
-    ART["schedule.hex + metadata"]
+    OPT["build_schedule.py + ilp_schedule.py"]
+    ART["schedule.hex, timing.json"]
     CHAR --> OPT --> ART
   end
 
@@ -111,7 +118,7 @@ Think of a **factory line** with three machines in a row:
 | **2** | Controller maps `L` → `L_bucket`; scheduler ROM returns **`k`**. |
 | **3** | Controller clears **job cycle counter**; enters **RUN_A**. |
 | **4** | Station A computes **`p`**; signals **a_done** after `TA` cycles. |
-| **5** | Station B runs refinement loop **`k` times**; signals **b_done**. |
+| **5** | Station B runs up to **`k_max`** refinements (**Ext-B:** may stop early); signals **b_done**. |
 | **6** | Station C computes **result**; signals **c_done** after `TC` cycles. |
 | **7** | Controller asserts **out_valid**; exposes **cycle_count**. |
 | **8** | Testbench checks **cycle_count ≤ L** and **|result − y_ref|**. |
@@ -150,9 +157,11 @@ sequenceDiagram
 **Formula:**
 
 ```text
-cycles_total = TA + k × TB_per_iter + TC
-cycles_total ≤ L
+cycles_worst = TA + k_max × TB_per_iter + TC
+cycles_worst ≤ L
 ```
+
+**Ext-B:** `cycles_actual = TA + i_done × TB_per_iter + TC` with `i_done ≤ k_max`. Offline scheduling uses **worst-case** so deadlines are never exceeded.
 
 **Example** (replace with your measured constants):
 
@@ -201,7 +210,7 @@ Below is the **recommended build order**. Each top-level block lists **sub-block
 
 ### 6.2 Block: `stage_norm_iter` (Station B) — **critical path**
 
-**Role:** Iterative divide/normalize; run exactly **`k`** refinement steps unless you add early-stop later.
+**Role:** Iterative divide/normalize. **v1 core:** exactly **`k`** steps. **Ext-B:** at most **`k_max`** steps; stop early when **`|residual| < ε`**.
 
 #### 6.2.1 Sub-blocks inside Station B
 
@@ -210,7 +219,8 @@ Below is the **recommended build order**. Each top-level block lists **sub-block
 | **B.1 Normalize divisor** | Leading-zero detect + shift → `b_norm` in [0.5, 1) | Matches Python on test vectors |
 | **B.2 Initial guess** | Seed `R` (linear approx or table) | Monotonic improvement vs k in sim |
 | **B.3 Refinement step** | One NR or Taylor update: `R ← f(R, b_norm)` | One step matches golden step |
-| **B.4 Iteration counter** | `i` from 0 to `k−1`; `k` from port | Stops after exactly `k` steps |
+| **B.4 Iteration counter** | `i` from 0 to `k_max−1`; early exit if residual &lt; ε (**Ext-B**) | `i_done ≤ k_max`; `early_stop` status |
+| **B.7 Early-stop compare** | Fixed-point residual vs `epsilon` | Matches golden early-stop path |
 | **B.5 Finalize** | `q ≈ p_norm × R` (+ exponent adjust if used) | End-to-end error vs k plot |
 | **B.6 Handshake** | `start`, `k`, `done` | Top FSM integrates |
 
@@ -315,7 +325,10 @@ stateDiagram-v2
 | **TB.2** | Golden model (Python or DPI) | Reference for all tests |
 | **TB.3** | Scoreboard: assert cycles ≤ L | 0 failures on scheduled runs |
 | **SW.1** | `build_schedule.py` — exhaustive **k*** labels | `schedule.hex` regenerates |
-| **SW.2** | `plot_results.py` — flagship figure | PNG in `results/` |
+| **SW.2** | `ilp_schedule.py` — ILP oracle (**Ext-A**) | Agreement report vs exhaustive |
+| **SW.3** | `train_schedule.py` — learned ROM (**Ext-C**) | `schedule_learned.hex` |
+| **SW.4** | `plot_results.py` — all flagship figures | PNG in `results/` |
+| **TB.4** | `deadline_props.sv` or bind — SVA (**Ext-D**) | Pass on scheduled; fail demo on max-k |
 
 ---
 
@@ -328,67 +341,89 @@ stateDiagram-v2
 | **7.3** | For each sample job + each feasible **k**, compute end-to-end error | `jobs.csv` |
 | **7.4** | For each `(L_bucket, class)`, set **k*** = argmin error s.t. budget ≤ L | `schedule table` |
 | **7.5** | Emit **`schedule.hex`** for `$readmemh` | `data/schedule.hex` |
-| **7.6** | (Optional phase F) Train model → **`schedule_learned.hex`** | Ablation report |
+| **7.6** | `ilp_schedule.py` — compare to exhaustive (**Ext-A**) | Agreement % in `results/` |
+| **7.7** | `train_schedule.py` → **`schedule_learned.hex`** (**Ext-C**) | Ablation vs gold |
 
 ```mermaid
 flowchart TD
   S0["Characterize B per k"] --> S1["Label k* per L, class"]
   S1 --> S2["Write schedule.hex"]
-  S2 --> S3["Optional: train learned model"]
+  S2 --> S3["train_schedule.py → schedule_learned.hex (Ext-C)"]
 ```
 
 Detail: [`learned_schedule_policy_and_roadmap.md`](learned_schedule_policy_and_roadmap.md) §4.
 
 ---
 
-## Part 8 — Learned schedule extension (RTL unchanged)
+## Part 8 — Extensions Ext-A … Ext-D (summary)
 
-**Principle:** Hardware pipeline **does not change** in v1. ML only changes **how the ROM contents are produced**.
+Full spec: [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md).
 
-| Step | What | Validates |
-|------|------|-----------|
-| **8.1** | Build **gold** table via exhaustive search | Optimal **k*** labels |
-| **8.2** | Train decision tree / logistic on features → **k** | Offline accuracy |
-| **8.3** | Export predictions to ROM format | Bit-exact load in sim |
-| **8.4** | Compare learned vs gold vs min-k vs max-k | Table + plot |
+### Ext-A — RTL + ILP/exhaustive oracle
 
-**Features (examples):** `L_bucket`, `class_id`, divisor magnitude bucket, ill-conditioned flag.
+- Measure **`TA`, `TB_per_iter`, `TC`** from simulation; store in `data/timing.json`.
+- `build_schedule.py` + `ilp_schedule.py` on the same A→B→C graph → **`schedule.hex`**.
+- Testbench: **0%** deadline misses on ROM-scheduled jobs; ROM **`k`** matches oracle.
 
-**Do not** replace iterative divide with a neural network in v1 — that would remove the technical core of Station B.
+### Ext-B — Early-stop under `k_max`
+
+- ROM outputs **`k_max`**; B stops when residual **&lt; ε** (CSR or ROM bucket).
+- Worst-case cycles still **`TA + k_max·TB + TC ≤ L`**.
+- Plot **cycles saved** and **error** vs fixed-**k** at same **`L`**.
+
+### Ext-C — Learned / compressed schedule
+
+- Train on features (`L_bucket`, `class_id`, …); export **`schedule_learned.hex`**.
+- Report **k match rate**, **mean error gap**, **ROM bytes** vs gold table.
+- Datapath unchanged; only ROM contents differ from gold.
+
+### Ext-D — Formal deadline property
+
+- SVA: **`out_valid |-> cycle_count_seen <= csr_deadline_L`** for scheduled policies.
+- Negative test: always-max-**k** may violate **`L`** (assert should fail).
+
+**Do not** replace iterative divide with a neural network — that removes the Station B story.
 
 ---
 
 ## Part 9 — What success looks like (metrics)
 
-### 9.1 Primary figure
+### 9.1 Figures
 
-- **X-axis:** deadline **`L`** (tight → loose)  
-- **Y-axis:** mean **final error** (vs golden)  
-- **Curves:** scheduled (table or learned), always-min-**k**, always-max-**k** (mark deadline violations)
+| # | Plot | Extension |
+|---|------|-----------|
+| 1 | **Error vs `L`** — gold ROM, learned, early-stop, min-k, max-k | A, B, C |
+| 2 | **Cycles vs `L`** — early-stop vs fixed-k | B |
+| 3 | **ROM size / k match %** — learned vs gold | C |
+| 4 | **ILP vs exhaustive agreement** | A |
 
 ### 9.2 Required table (example columns)
 
-| Policy | Deadline miss rate | Mean error | Notes |
-|--------|-------------------|------------|-------|
-| Scheduled | 0% | (fill) | ROM **k** |
-| Always min-k | 0% | higher | Safe but wasteful when L large |
-| Always max-k | (fill) | lowest | May violate L |
-| Learned | ≈0% | within ε of scheduled | After phase F |
+| Policy | Deadline miss rate | Mean error | Mean cycles | Notes |
+|--------|-------------------|------------|-------------|-------|
+| Gold ROM (fixed k) | 0% | (fill) | (fill) | Ext-A |
+| Gold ROM + early-stop | 0% | (fill) | ≤ fixed-k | Ext-B |
+| Learned ROM | 0% | (fill) | (fill) | Ext-C vs gold |
+| Always min-k | 0% | higher | low | Baseline |
+| Always max-k | (fill) | lowest | high | May violate L |
 
 ---
 
-## Part 10 — Phased implementation schedule
+## Part 10 — Phased implementation schedule (summer)
 
-| Phase | Weeks (est.) | Exit criterion |
-|-------|--------------|----------------|
-| **1** — Station B unit | 1–1.5 | error vs **k** plot |
-| **2** — A, C units | 0.5–1 | golden tests pass |
-| **3** — Top + FSM | 1 | one E2E job passes |
-| **4** — ROM + `build_schedule.py` | 1 | scheduled runs meet **L** |
-| **5** — Sweeps + `RESULTS.md` | 0.5 | flagship PNG committed |
-| **6** — CI | 0.5 | `make test` on push |
-| **7** — Learned schedule | 1–2 | ablation vs gold table |
-| **8** — Optional: FPGA / early-stop | 2+ | demo or extra plot |
+Aligned with [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md) and [`learned_schedule_policy_and_roadmap.md`](learned_schedule_policy_and_roadmap.md).
+
+| Phase | Weeks (est.) | Extension | Exit criterion |
+|-------|--------------|-----------|----------------|
+| **1** — Station B (fixed **k**) | 1–1.5 | — | error vs **k** plot |
+| **2** — A, C units | 0.5–1 | — | golden tests pass |
+| **3** — Top + FSM + cycle counter | 1 | Ext-A start | one E2E job passes |
+| **4** — ROM + `build_schedule.py` + `ilp_schedule.py` | 1 | **Ext-A** | 0% misses; ILP agrees with exhaustive |
+| **5** — Sweeps + `RESULTS.md` | 0.5 | Ext-A | error vs **L** flagship plot |
+| **6** — Early-stop in B | 1–1.5 | **Ext-B** | cycles vs error plot |
+| **7** — `train_schedule.py` + ablation | 1–2 | **Ext-C** | learned metrics vs gold |
+| **8** — SVA + CI | 0.5–1 | **Ext-D** | `make test` + assert pass on scheduled |
+| **9** — Optional FPGA demo | 1+ | — | UART log only if time |
 
 ---
 
@@ -396,8 +431,9 @@ Detail: [`learned_schedule_policy_and_roadmap.md`](learned_schedule_policy_and_r
 
 ```text
 docs/
-  00_START_HERE_READ_THESE_FOUR_DOCS.md   ← index
-  01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md ← this file
+  00_START_HERE_READ_THESE_FOUR_DOCS.md
+  01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md
+  02_RESEARCH_EXTENSIONS_ABCD.md          ← Ext-A…D spec
   iterative_approximate_dag_storyboard.md
   iterative_approximate_dag_diagram.md
   learned_schedule_policy_and_roadmap.md
@@ -406,12 +442,17 @@ rtl/
   stage_mul.sv, stage_norm_iter.sv, stage_acc.sv
   sched_rom.sv, sched_addr_gen.sv, pipeline_ctrl.sv
   top_iter_pipeline.sv, csr_regs.sv
+  assertions/deadline_props.sv            ← Ext-D
 tb/
+  tb_top.sv, scoreboard.sv
 sw/
-  golden_model.py, build_schedule.py, train_schedule.py, plot_results.py
+  golden_model.py, characterize_b.py
+  build_schedule.py, ilp_schedule.py      ← Ext-A
+  train_schedule.py, plot_results.py      ← Ext-C
 data/
+  schedule.hex, schedule_learned.hex, timing.json
 results/
-Makefile
+Makefile                                  ← sim, test, schedule, ilp, train, plot
 ```
 
 ---
@@ -432,13 +473,14 @@ Full ASCII: [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_d
 
 ---
 
-## Part 13 — Related documents (no overlap required)
+## Part 13 — Related documents
 
 | Need | Read |
 |------|------|
+| **Ext-A…D scope + checklists** | [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md) |
 | 5-minute story | [`iterative_approximate_dag_storyboard.md`](iterative_approximate_dag_storyboard.md) |
-| Every diagram + signal table | [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md) |
-| ML + summer phases | [`learned_schedule_policy_and_roadmap.md`](learned_schedule_policy_and_roadmap.md) |
+| Diagrams + signals | [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md) |
+| Ext-C + build phases | [`learned_schedule_policy_and_roadmap.md`](learned_schedule_policy_and_roadmap.md) |
 | Index | [`00_START_HERE_READ_THESE_FOUR_DOCS.md`](00_START_HERE_READ_THESE_FOUR_DOCS.md) |
 
 ---

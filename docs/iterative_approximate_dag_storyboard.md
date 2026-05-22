@@ -1,10 +1,6 @@
 # One-page storyboard: deadline-aware scheduling for a 3-stage iterative pipeline
 
-<<<<<<< HEAD
-**Theme:** A tiny “factory line” in hardware: three stations in a row, each can run **fast/rough** or **slow/careful**, under a **hard time budget**. This matches research on **iterative approximate arithmetic** and **scheduling** (DAG, latency limit, discrete quality modes).
-=======
-**Theme:** A tiny “factory line” in hardware: three stations in a row, each can run **fast/rough** or **slow/careful**, under a **hard time budget**. This matches research on **iterative approximate arithmetic** and **scheduling** under a **latency limit** and **discrete quality modes** (DAG: A → B → C).
->>>>>>> 0b8d567 (Add presentation index and step-by-step walkthrough docs)
+**Theme:** A small hardware “factory line” (stations A → B → C) under a **hard cycle budget** **`L`**, with an **iterative approximate** middle stage whose quality is controlled by **`k`** and optional **early-stop**. Scheduling theory exists in prior work; this project **implements and extends** it in RTL with extensions **Ext-A … Ext-D** (see [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md)).
 
 ---
 
@@ -12,77 +8,76 @@
 
 | Role | Working name | What it does (plain English) |
 |------|----------------|------------------------------|
-| **Station A** | `STAGE_MUL` | Multiplies two fixed-point numbers. **Exact** in one shot (fixed latency). |
-| **Station B** | `STAGE_NORM` | **Divides** (or normalizes) using an **iterative** method: repeat “improve guess” **k** times. **Larger k** → more accurate, more cycles. This is your main **dial**. |
-| **Station C** | `STAGE_ACC` | Adds the result into a running sum (or applies one more exact op). **Exact**, fixed latency. |
-| **Manager** | `SCHEDULER` | Before each **job** (or each **segment**), picks **k** for Station B from a **small table** so **total cycles ≤ deadline** and **final error** is minimized under a **simple error model**. |
+| **Station A** | `STAGE_MUL` | Multiplies two fixed-point numbers. **Exact**, fixed latency. |
+| **Station B** | `STAGE_NORM` | **Iterative** divide/normalize: up to **`k_max`** refinement steps; **Ext-B** can stop early when residual &lt; **ε**. |
+| **Station C** | `STAGE_ACC` | Accumulates (e.g. `z0 + q`). **Exact**, fixed latency. |
+| **Manager** | `SCHEDULER` | ROM (or learned ROM) picks **`k_max`** (and optionally **ε**) so **worst-case** cycles **≤ `L`** and error is minimized offline. |
 
-**Data path (order):** `A → B → C` (no feedback loop in v1).
-
----
-
-## 2. The “dials” (what you actually configure)
-
-- **Deadline `L`:** Maximum cycles allowed for **one full pass** A→B→C (CSR or static for first version).
-- **Modes for Station B:** Only **2–3 choices**, e.g. `k ∈ {2, 4, 6}` iterations (each iteration = fixed cycle cost in your RTL).
-- **Offline table:** For each `(deadline bucket, optional input class)` you **precompute** which `k` is best using a script (small search or ILP). Hardware stores **only the answer** (ROM or registers).
-
-**Rule of thumb:** Fewer iterations when the clock is tight; more when you can afford them.
+**Data path:** `A → B → C` (chain only in v1).
 
 ---
 
-## 3. Scene-by-scene flow (one “job”)
+## 2. The “dials”
 
-1. **Start:** New operands arrive at A; **Scheduler** has already chosen **k** for this segment.
-2. **Station A** finishes multiply; result passes to B.
-3. **Station B** runs **exactly k** refinement steps (or stops early only if you add that extension later), outputs normalized value.
-4. **Station C** accumulates (or finishes the chain).
-5. **End:** Assert **total cycle count ≤ L**; record **final output** and **golden** reference from a software model.
+| Dial | Meaning |
+|------|---------|
+| **`L`** | Max cycles for one full job (CSR / testbench). |
+| **`k` / `k_max`** | Max refinement iterations in B (discrete set, e.g. {2, 4, 6}). |
+| **`ε`** | Early-stop threshold on residual (**Ext-B**). |
+| **ROM row** | Offline choice per `(L_bucket, class)` — from exhaustive search, ILP (**Ext-A**), or learned table (**Ext-C**). |
 
----
+**Cycle budget (worst case):** `TA + k_max × TB_per_iter + TC ≤ L`.
 
-## 4. What you plot at the end (success looks like)
-
-- **X-axis:** Deadline `L` (tight → loose).  
-- **Y-axis:** **Final error** (e.g. vs double-precision reference) or **miss rate** if you use thresholds.  
-- **Curves:**  
-  - **Naive:** always use **max k** (best quality, may **violate** deadline — mark failures).  
-  - **Scheduled:** use **table-chosen k** (meets deadline, **lower** error than always-min-k when `L` is large enough).
-
-**Optional:** Bar chart of **encoding**: which `k` the scheduler picked for each deadline.
+**Actual cycles (early-stop):** `TA + i_done × TB_per_iter + TC` with `i_done ≤ k_max`.
 
 ---
 
-## 5. Mini glossary (terms you will see)
+## 3. One job (runtime)
 
-| Term | Plain meaning |
-|------|----------------|
-| **RTL** | Text description of digital logic; you simulate it before (optionally) putting it on an FPGA. |
-| **Fixed-point** | Numbers as integers with an agreed **binary point** (no floating hardware required). |
-| **Iterative** | Same step repeated; answer gets better each repeat. |
-| **DAG** | “Who runs before whom” picture; here a simple **chain** A→B→C. |
-| **CSR** | Control/status register: software or testbench sets **deadline** or **mode**. |
-| **Golden model** | Trusted answer from **C/Python** math used to score hardware output. |
+1. Operands + **`L`** (+ class) arrive; scheduler returns **`k_max`** (and **ε** if used).
+2. **A** → **B** (iterate until early-stop or **`k_max`**) → **C**.
+3. Testbench: **error** vs golden; **`cycle_count ≤ L`** (**Ext-D** asserts this for scheduled policies).
+4. Log **iterations used** for Ext-B plots.
 
 ---
 
-## 6. What you deliver (concrete artifacts)
+## 4. What you plot
 
-1. **Simulatable RTL** for A, B (iterative **k**), C, and Scheduler/table interface.  
-2. **Testbench** that runs many jobs, sweeps `L`, logs **cycles** and **error**.  
-3. **Short report:** 1 figure (plot above) + 1 paragraph linking to **deadline vs quality** tradeoff and **error propagation** (early stages matter).
+| Figure | Extensions |
+|--------|------------|
+| **Error vs `L`** | All policies (flagship) — Ext-A baselines |
+| **Cycles vs `L`** | Fixed-**k** vs early-stop — **Ext-B** |
+| **ROM size / `k` match %** | Gold vs learned — **Ext-C** |
+| **ILP vs exhaustive agreement** | **Ext-A** |
 
 ---
 
-<<<<<<< HEAD
-=======
+## 5. Four extensions (quick)
+
+| ID | One line |
+|----|----------|
+| **Ext-A** | RTL + measured **`TA/TB/TC`**; ROM matches **ILP/exhaustive** oracle |
+| **Ext-B** | Stop B early under **`k_max`** cap; still **`cycles ≤ L`** |
+| **Ext-C** | Learned/compressed ROM vs gold table |
+| **Ext-D** | SVA: **`cycle_count ≤ L`** when job completes (scheduled runs) |
+
+---
+
+## 6. Deliverables
+
+1. Simulatable **RTL** + testbench + `make test`  
+2. **`sw/`** scripts: golden, schedule, ILP, train, plot  
+3. **`data/schedule.hex`**, optional **`schedule_learned.hex`**, **`timing.json`**  
+4. **`docs/RESULTS.md`** with tables and plots above  
+
+---
+
 ## 7. Research framing (one sentence)
 
-It implements **choosing how many refinement steps** each **iterative approximate** stage uses **under a latency cap** in a **dependent pipeline**—scheduling **iterative approximate hardware** in a small application graph.
+An **extension** of deadline-aware scheduling for **iterative approximate hardware**: **cycle-accurate RTL**, **early-stop under a cap**, **compressed learned policies**, and **formal deadline checks**—validated against an **offline optimal oracle** on a three-node pipeline graph.
 
 ---
 
->>>>>>> 0b8d567 (Add presentation index and step-by-step walkthrough docs)
-*Storyboard for: iterative approximate DAG scheduling project · RTL simulation (FPGA optional)*
+*Storyboard · RTL simulation (FPGA optional)*
 
-**Related:** Start at [`00_START_HERE_READ_THESE_FOUR_DOCS.md`](00_START_HERE_READ_THESE_FOUR_DOCS.md) · Full walkthrough → [`01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md`](01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md) · Diagrams → [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md)
+**Related:** [`00_START_HERE_READ_THESE_FOUR_DOCS.md`](00_START_HERE_READ_THESE_FOUR_DOCS.md) · [`01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md`](01_PROJECT_WALKTHROUGH_STEP_BY_STEP.md) · [`02_RESEARCH_EXTENSIONS_ABCD.md`](02_RESEARCH_EXTENSIONS_ABCD.md) · [`iterative_approximate_dag_diagram.md`](iterative_approximate_dag_diagram.md)
