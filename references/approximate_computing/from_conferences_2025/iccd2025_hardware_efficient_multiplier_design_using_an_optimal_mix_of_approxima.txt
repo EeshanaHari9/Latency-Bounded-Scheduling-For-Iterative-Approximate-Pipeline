@@ -1,0 +1,9 @@
+Title: Hardware Efficient Multiplier design using an Optimal mix of Approximate Booth Encodings
+Conference: ICCD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=Hardware%20Efficient%20Multiplier%20design%20using%20an%20Optimal%20mix%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Hardware%20Efficient%20Multiplier%20design%20using%20an%20Optimal%20mix%20of%20Approximate%20Booth%20Encodings%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22Hardware%20Efficient%20Multiplier%20design%20using%20an%20Optimal%20mix%20of%20Approximate%20Booth%20Encodings%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding

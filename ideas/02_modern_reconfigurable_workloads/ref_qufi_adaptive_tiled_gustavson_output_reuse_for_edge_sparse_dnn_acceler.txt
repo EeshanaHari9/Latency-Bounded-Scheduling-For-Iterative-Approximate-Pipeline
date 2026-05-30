@@ -1,0 +1,5 @@
+Title: QuFi: Adaptive Tiled Gustavson Output Reuse for Edge Sparse DNN Accelerators
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=QuFi%3A%20Adaptive%20Tiled%20Gustavson%20Output%20Reuse%20for%20Edge%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22QuFi%3A%20Adaptive%20Tiled%20Gustavson%20Output%20Reuse%20for%20Edge%20Sparse%20DNN%20Accelerators%22%202025&highlight=true&returnType=SEARCH

@@ -1,0 +1,5 @@
+Title: GAVINA: flexible aggressive undervolting for bit-serial mixed-precision DNN acceleration
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=GAVINA%3A%20flexible%20aggressive%20undervolting%20for%20bit-serial%20mixed-precision%20DNN%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22GAVINA%3A%20flexible%20aggressive%20undervolting%20for%20bit-serial%20mixed-precision%20DNN%20acceleration%22%202025&highlight=true&returnType=SEARCH

@@ -1,0 +1,5 @@
+Title: Hardware Efficient Multiplier design using an Optimal mix of Approximate Booth Encodings
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=Hardware%20Efficient%20Multiplier%20design%20using%20an%20Optimal%20mix%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Hardware%20Efficient%20Multiplier%20design%20using%20an%20Optimal%20mix%20of%20Approximate%20Booth%20Encodings%22%202025&highlight=true&returnType=SEARCH

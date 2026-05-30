@@ -1,0 +1,5 @@
+Title: Enhancing Transformer Inference Efficiency on FPGA through Fully Fusion and Integer-Only Quantization Techniques
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=Enhancing%20Transformer%20Inference%20Efficiency%20on%20FPGA%20through%20Fully%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Enhancing%20Transformer%20Inference%20Efficiency%20on%20FPGA%20through%20Fully%20Fusion%20and%20Integer-Only%20Quantization%20Techniques%22%202025&highlight=true&returnType=SEARCH

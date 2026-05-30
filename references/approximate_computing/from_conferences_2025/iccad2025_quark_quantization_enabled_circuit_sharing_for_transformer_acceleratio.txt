@@ -1,0 +1,9 @@
+Title: QUARK: Quantization-Enabled Circuit Sharing for Transformer Acceleration by Exploiting Common Patterns in Nonlinear Operations
+Conference: ICCAD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=QUARK%3A%20Quantization-Enabled%20Circuit%20Sharing%20for%20Transformer%20Acceleration%20by%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22QUARK%3A%20Quantization-Enabled%20Circuit%20Sharing%20for%20Transformer%20Acceleration%20by%20Exploiting%20Common%20Patterns%20in%20Nonlinear%20Operations%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22QUARK%3A%20Quantization-Enabled%20Circuit%20Sharing%20for%20Transformer%20Acceleration%20by%20Exploiting%20Common%20Patterns%20in%20Nonlinear%20Operations%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding

@@ -1,0 +1,5 @@
+Title: SiST: Token Similarity and Sparsity Aware Optimization for Transformers on FPGA
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=SiST%3A%20Token%20Similarity%20and%20Sparsity%20Aware%20Optimization%20for%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22SiST%3A%20Token%20Similarity%20and%20Sparsity%20Aware%20Optimization%20for%20Transformers%20on%20FPGA%22%202025&highlight=true&returnType=SEARCH

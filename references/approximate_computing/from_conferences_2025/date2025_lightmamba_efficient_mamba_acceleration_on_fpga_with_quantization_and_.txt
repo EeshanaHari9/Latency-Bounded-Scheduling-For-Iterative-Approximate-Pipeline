@@ -1,0 +1,9 @@
+Title: LightMamba: Efficient Mamba Acceleration on FPGA with Quantization and Hardware Co-Design
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=LightMamba%3A%20Efficient%20Mamba%20Acceleration%20on%20FPGA%20with%20Quantization%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22LightMamba%3A%20Efficient%20Mamba%20Acceleration%20on%20FPGA%20with%20Quantization%20and%20Hardware%20Co-Design%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22LightMamba%3A%20Efficient%20Mamba%20Acceleration%20on%20FPGA%20with%20Quantization%20and%20Hardware%20Co-Design%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

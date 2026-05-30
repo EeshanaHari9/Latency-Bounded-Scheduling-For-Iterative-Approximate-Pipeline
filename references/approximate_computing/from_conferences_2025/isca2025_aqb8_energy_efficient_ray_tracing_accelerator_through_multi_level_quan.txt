@@ -1,0 +1,9 @@
+Title: AQB8: Energy-Efficient Ray Tracing Accelerator through Multi-Level Quantization
+Conference: ISCA_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=AQB8%3A%20Energy-Efficient%20Ray%20Tracing%20Accelerator%20through%20Multi-Level%20Quantization%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22AQB8%3A%20Energy-Efficient%20Ray%20Tracing%20Accelerator%20through%20Multi-Level%20Quantization%22&startPage=0&pageSize=25
+3. IEEE/ACM search (hostname proxy): https://dl-acm-org.ezproxy.library.wisc.edu/action/doSearch?AllField=%22AQB8%3A%20Energy-Efficient%20Ray%20Tracing%20Accelerator%20through%20Multi-Level%20Quantization%22&startPage=0&pageSize=25
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053

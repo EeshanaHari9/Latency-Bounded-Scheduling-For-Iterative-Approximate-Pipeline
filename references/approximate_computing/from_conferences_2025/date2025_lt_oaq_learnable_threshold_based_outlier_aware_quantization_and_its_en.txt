@@ -1,0 +1,9 @@
+Title: LT-OAQ: Learnable Threshold Based Outlier-Aware Quantization and Its Energy-Efficient Accelerator for Low-Precision On-Chip Training
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=LT-OAQ%3A%20Learnable%20Threshold%20Based%20Outlier-Aware%20Quantization%20and%20Its%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22LT-OAQ%3A%20Learnable%20Threshold%20Based%20Outlier-Aware%20Quantization%20and%20Its%20Energy-Efficient%20Accelerator%20for%20Low-Precision%20On-Chip%20Training%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22LT-OAQ%3A%20Learnable%20Threshold%20Based%20Outlier-Aware%20Quantization%20and%20Its%20Energy-Efficient%20Accelerator%20for%20Low-Precision%20On-Chip%20Training%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

@@ -1,0 +1,5 @@
+Title: Flame: A Multiplier-Free LLM Accelerator with Dynamic Block Floating Point
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=Flame%3A%20A%20Multiplier-Free%20LLM%20Accelerator%20with%20Dynamic%20Block%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Flame%3A%20A%20Multiplier-Free%20LLM%20Accelerator%20with%20Dynamic%20Block%20Floating%20Point%22%202025&highlight=true&returnType=SEARCH

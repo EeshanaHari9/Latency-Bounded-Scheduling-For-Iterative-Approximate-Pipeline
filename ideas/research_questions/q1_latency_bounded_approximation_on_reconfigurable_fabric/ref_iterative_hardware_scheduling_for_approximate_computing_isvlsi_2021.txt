@@ -1,0 +1,6 @@
+Title: Iterative hardware scheduling for approximate computing (ISVLSI 2021)
+PDF not found locally.
+
+IEEE/ACM: https://ieeexplore.ieee.org/document/9480182
+UW proxy: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/9480182
+Note: Behroozi et al. — iterative approximate unit scheduling.

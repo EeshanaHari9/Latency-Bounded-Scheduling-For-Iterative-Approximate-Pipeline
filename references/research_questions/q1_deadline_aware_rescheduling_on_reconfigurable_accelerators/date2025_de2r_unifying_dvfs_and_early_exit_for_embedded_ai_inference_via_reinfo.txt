@@ -1,0 +1,9 @@
+Title: De2r: Unifying DVFS and Early-Exit for Embedded AI Inference Via Reinforcement Learning
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=De2r%3A%20Unifying%20DVFS%20and%20Early-Exit%20for%20Embedded%20AI%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22De2r%3A%20Unifying%20DVFS%20and%20Early-Exit%20for%20Embedded%20AI%20Inference%20Via%20Reinforcement%20Learning%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22De2r%3A%20Unifying%20DVFS%20and%20Early-Exit%20for%20Embedded%20AI%20Inference%20Via%20Reinforcement%20Learning%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

@@ -1,0 +1,5 @@
+Title: Accelerating LLM Inference with Flexible N:M Sparsity via A Fully Digital Compute-in-Memory Accelerator
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=Accelerating%20LLM%20Inference%20with%20Flexible%20N%3AM%20Sparsity%20via%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Accelerating%20LLM%20Inference%20with%20Flexible%20N%3AM%20Sparsity%20via%20A%20Fully%20Digital%20Compute-in-Memory%20Accelerator%22%202025&highlight=true&returnType=SEARCH

@@ -1,0 +1,9 @@
+Title: Gradient Approximation of Approximate Multipliers for High-Accuracy Deep Neural Network Retraining
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=Gradient%20Approximation%20of%20Approximate%20Multipliers%20for%20High-Accuracy%20Deep%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Gradient%20Approximation%20of%20Approximate%20Multipliers%20for%20High-Accuracy%20Deep%20Neural%20Network%20Retraining%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22Gradient%20Approximation%20of%20Approximate%20Multipliers%20for%20High-Accuracy%20Deep%20Neural%20Network%20Retraining%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

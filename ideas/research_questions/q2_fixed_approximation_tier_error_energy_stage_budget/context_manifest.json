@@ -1,0 +1,42 @@
+[
+  {
+    "conference": "DATE_2025",
+    "title": "Efficient Approximate Logic Synthesis with Dual-Phase Iterative Framework",
+    "status": "linked"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "Segment-Wise Accumulation: Low-Error Logarithmic Domain Computing for Efficient Large Language Model Inference",
+    "status": "linked"
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "ApproxGNN: A Pretrained GNN for Parameter Prediction in Design Space Exploration for Approximate Computing",
+    "status": "stub"
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "PAR-CIM: A Precise/Approximate Reconfigurable Digital CIM Macro with 0.35-4b Fractional Mixed-Bitwidth Quantization",
+    "status": "linked"
+  },
+  {
+    "conference": "ICCD_2025",
+    "title": "Early Termination with Activation Sign Prediction for Energy-Efficient CNN Inference Using Sum-of-Power-of-Two Quantization",
+    "status": "stub"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "Panacea: Novel DNN Accelerator using Accuracy-Preserving Asymmetric Quantization and Energy-Saving Bit-Slice Sparsity",
+    "status": "linked"
+  },
+  {
+    "ref": "li2015_joint_precision_optimization_approximate_hls_dac.pdf",
+    "kind": "foundation",
+    "status": "stub"
+  },
+  {
+    "ref": "reis2017_approximate_hls_ahls_date.pdf",
+    "kind": "foundation",
+    "status": "stub"
+  }
+]

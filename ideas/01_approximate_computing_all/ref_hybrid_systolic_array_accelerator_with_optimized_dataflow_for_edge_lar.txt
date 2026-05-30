@@ -1,0 +1,5 @@
+Title: Hybrid Systolic Array Accelerator with Optimized Dataflow for Edge Large Language Model Inference
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=Hybrid%20Systolic%20Array%20Accelerator%20with%20Optimized%20Dataflow%20for%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Hybrid%20Systolic%20Array%20Accelerator%20with%20Optimized%20Dataflow%20for%20Edge%20Large%20Language%20Model%20Inference%22%202025&highlight=true&returnType=SEARCH

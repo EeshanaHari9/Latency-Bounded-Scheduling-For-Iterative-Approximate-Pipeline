@@ -1,0 +1,5 @@
+Title: A Compact, Low Power Transprecision ALU for Smart Edge Devices
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=A%20Compact%2C%20Low%20Power%20Transprecision%20ALU%20for%20Smart%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22A%20Compact%2C%20Low%20Power%20Transprecision%20ALU%20for%20Smart%20Edge%20Devices%22%202025&highlight=true&returnType=SEARCH

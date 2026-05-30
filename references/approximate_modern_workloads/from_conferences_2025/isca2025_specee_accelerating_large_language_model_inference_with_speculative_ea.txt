@@ -1,0 +1,9 @@
+Title: SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting
+Conference: ISCA_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=SpecEE%3A%20Accelerating%20Large%20Language%20Model%20Inference%20with%20Speculative%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22SpecEE%3A%20Accelerating%20Large%20Language%20Model%20Inference%20with%20Speculative%20Early%20Exiting%22&startPage=0&pageSize=25
+3. IEEE/ACM search (hostname proxy): https://dl-acm-org.ezproxy.library.wisc.edu/action/doSearch?AllField=%22SpecEE%3A%20Accelerating%20Large%20Language%20Model%20Inference%20with%20Speculative%20Early%20Exiting%22&startPage=0&pageSize=25
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053

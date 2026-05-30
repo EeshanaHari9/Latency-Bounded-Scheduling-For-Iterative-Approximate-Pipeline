@@ -1,0 +1,9 @@
+Title: Discriminate Weight Approximation for Efficient DSP Packing in LLM Accelerators
+Conference: ICCAD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=Discriminate%20Weight%20Approximation%20for%20Efficient%20DSP%20Packing%20in%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Discriminate%20Weight%20Approximation%20for%20Efficient%20DSP%20Packing%20in%20LLM%20Accelerators%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22Discriminate%20Weight%20Approximation%20for%20Efficient%20DSP%20Packing%20in%20LLM%20Accelerators%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding

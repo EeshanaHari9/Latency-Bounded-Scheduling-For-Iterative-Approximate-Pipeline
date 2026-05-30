@@ -1,0 +1,5 @@
+Title: Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=Oaken%3A%20Fast%20and%20Efficient%20LLM%20Serving%20with%20Online-Offline%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22Oaken%3A%20Fast%20and%20Efficient%20LLM%20Serving%20with%20Online-Offline%20Hybrid%20KV%20Cache%20Quantization%22&startPage=0&pageSize=25

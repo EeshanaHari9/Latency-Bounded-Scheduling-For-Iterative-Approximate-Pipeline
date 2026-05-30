@@ -1,0 +1,9 @@
+Title: A Compact, Low Power Transprecision ALU for Smart Edge Devices
+Conference: ISLPED_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=A%20Compact%2C%20Low%20Power%20Transprecision%20ALU%20for%20Smart%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22A%20Compact%2C%20Low%20Power%20Transprecision%20ALU%20for%20Smart%20Edge%20Devices%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22A%20Compact%2C%20Low%20Power%20Transprecision%20ALU%20for%20Smart%20Edge%20Devices%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/

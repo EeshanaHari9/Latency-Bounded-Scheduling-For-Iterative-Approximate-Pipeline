@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Cocktail: Chunk-Adaptive Mixed-Precision Quantization for Long-Context LLM Inference",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_cocktail_chunk_adaptive_mixed_precision_quantization_for_long_context_",
+    "library_search_url": "https://search.library.wisc.edu/?q=Cocktail%3A%20Chunk-Adaptive%20Mixed-Precision%20Quantization%20for%20Long-Context%20LLM%20Inference%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Cocktail%3A%20Chunk-Adaptive%20Mixed-Precision%20Quantization%20for%20Long-Context%20LLM%20Inference%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "De2r: Unifying DVFS and Early-Exit for Embedded AI Inference Via Reinforcement Learning",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_de2r_unifying_dvfs_and_early_exit_for_embedded_ai_inference_via_reinfo",
+    "library_search_url": "https://search.library.wisc.edu/?q=De2r%3A%20Unifying%20DVFS%20and%20Early-Exit%20for%20Embedded%20AI%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22De2r%3A%20Unifying%20DVFS%20and%20Early-Exit%20for%20Embedded%20AI%20Inference%20Via%20Reinforcement%20Learning%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Efficient Approximate Logic Synthesis with Dual-Phase Iterative Framework",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "date2025_efficient_approximate_logic_synthesis_with_dual_phase_iterative_framew",
+    "library_search_url": "https://search.library.wisc.edu/?q=Efficient%20Approximate%20Logic%20Synthesis%20with%20Dual-Phase%20Iterative%20Framework%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Efficient%20Approximate%20Logic%20Synthesis%20with%20Dual-Phase%20Iterative%20Framework%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Efficient Approximate Nearest Neighbor Search Via Data-Adaptive Parameter Adjustment in Hierarchical Navigable Small Graphs",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "date2025_efficient_approximate_nearest_neighbor_search_via_data_adaptive_parame",
+    "library_search_url": "https://search.library.wisc.edu/?q=Efficient%20Approximate%20Nearest%20Neighbor%20Search%20Via%20Data-Adaptive%20Parameter%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Efficient%20Approximate%20Nearest%20Neighbor%20Search%20Via%20Data-Adaptive%20Parameter%20Adjustment%20in%20Hierarchical%20Navigable%20Small%20Graphs%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "FineQ: Software-Hardware Co-Design for Low-Bit Fine-Grained Mixed-Precision Quantization of LLMs",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_fineq_software_hardware_co_design_for_low_bit_fine_grained_mixed_preci",
+    "library_search_url": "https://search.library.wisc.edu/?q=FineQ%3A%20Software-Hardware%20Co-Design%20for%20Low-Bit%20Fine-Grained%20Mixed-Precision%20Quantization%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22FineQ%3A%20Software-Hardware%20Co-Design%20for%20Low-Bit%20Fine-Grained%20Mixed-Precision%20Quantization%20of%20LLMs%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "FLASH: An Efficient Hardware Accelerator Leveraging Approximate and Sparse FFT for Homomorphic Encryption",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "date2025_flash_an_efficient_hardware_accelerator_leveraging_approximate_and_spa",
+    "library_search_url": "https://search.library.wisc.edu/?q=FLASH%3A%20An%20Efficient%20Hardware%20Accelerator%20Leveraging%20Approximate%20and%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22FLASH%3A%20An%20Efficient%20Hardware%20Accelerator%20Leveraging%20Approximate%20and%20Sparse%20FFT%20for%20Homomorphic%20Encryption%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Gradient Approximation of Approximate Multipliers for High-Accuracy Deep Neural Network Retraining",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "date2025_gradient_approximation_of_approximate_multipliers_for_high_accuracy_de",
+    "library_search_url": "https://search.library.wisc.edu/?q=Gradient%20Approximation%20of%20Approximate%20Multipliers%20for%20High-Accuracy%20Deep%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Gradient%20Approximation%20of%20Approximate%20Multipliers%20for%20High-Accuracy%20Deep%20Neural%20Network%20Retraining%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Late Breaking Results: Approximated LUT-Based Neural Networks for FPGA Accelerated Inference",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_late_breaking_results_approximated_lut_based_neural_networks_for_fpga_",
+    "library_search_url": "https://search.library.wisc.edu/?q=Late%20Breaking%20Results%3A%20Approximated%20LUT-Based%20Neural%20Networks%20for%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Late%20Breaking%20Results%3A%20Approximated%20LUT-Based%20Neural%20Networks%20for%20FPGA%20Accelerated%20Inference%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Late Breaking Results: Leveraging Approximate Computing for Carbon-Aware DNN Accelerators",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_late_breaking_results_leveraging_approximate_computing_for_carbon_awar",
+    "library_search_url": "https://search.library.wisc.edu/?q=Late%20Breaking%20Results%3A%20Leveraging%20Approximate%20Computing%20for%20Carbon-Aware%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Late%20Breaking%20Results%3A%20Leveraging%20Approximate%20Computing%20for%20Carbon-Aware%20DNN%20Accelerators%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "LightMamba: Efficient Mamba Acceleration on FPGA with Quantization and Hardware Co-Design",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_lightmamba_efficient_mamba_acceleration_on_fpga_with_quantization_and_",
+    "library_search_url": "https://search.library.wisc.edu/?q=LightMamba%3A%20Efficient%20Mamba%20Acceleration%20on%20FPGA%20with%20Quantization%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22LightMamba%3A%20Efficient%20Mamba%20Acceleration%20on%20FPGA%20with%20Quantization%20and%20Hardware%20Co-Design%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "MPTorch-FPGA: A Custom Mixed-Precision Framework for FPGA-Based DNN Training",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_mptorch_fpga_a_custom_mixed_precision_framework_for_fpga_based_dnn_tra",
+    "library_search_url": "https://search.library.wisc.edu/?q=MPTorch-FPGA%3A%20A%20Custom%20Mixed-Precision%20Framework%20for%20FPGA-Based%20DNN%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22MPTorch-FPGA%3A%20A%20Custom%20Mixed-Precision%20Framework%20for%20FPGA-Based%20DNN%20Training%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "RGHT-Q: Reconfigurable GEMM Unit for Heterogeneous-Homogeneous Tensor Quantization",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_rght_q_reconfigurable_gemm_unit_for_heterogeneous_homogeneous_tensor_q",
+    "library_search_url": "https://search.library.wisc.edu/?q=RGHT-Q%3A%20Reconfigurable%20GEMM%20Unit%20for%20Heterogeneous-Homogeneous%20Tensor%20Quantization%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22RGHT-Q%3A%20Reconfigurable%20GEMM%20Unit%20for%20Heterogeneous-Homogeneous%20Tensor%20Quantization%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "SoftEx: A Low Power and Flexible Softmax Accelerator with Fast Approximate Exponentiation",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "date2025_softex_a_low_power_and_flexible_softmax_accelerator_with_fast_approxim",
+    "library_search_url": "https://search.library.wisc.edu/?q=SoftEx%3A%20A%20Low%20Power%20and%20Flexible%20Softmax%20Accelerator%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22SoftEx%3A%20A%20Low%20Power%20and%20Flexible%20Softmax%20Accelerator%20with%20Fast%20Approximate%20Exponentiation%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Timing-Driven Approximate Logic Synthesis Based on Double-Chase Grey Wolf Optimizer",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "date2025_timing_driven_approximate_logic_synthesis_based_on_double_chase_grey_w",
+    "library_search_url": "https://search.library.wisc.edu/?q=Timing-Driven%20Approximate%20Logic%20Synthesis%20Based%20on%20Double-Chase%20Grey%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Timing-Driven%20Approximate%20Logic%20Synthesis%20Based%20on%20Double-Chase%20Grey%20Wolf%20Optimizer%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Dancer: Dynamic Compression and Quantization Architecture for Deep Graph Convolutional Network",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_dancer_dynamic_compression_and_quantization_architecture_for_deep_grap",
+    "library_search_url": "https://search.library.wisc.edu/?q=Dancer%3A%20Dynamic%20Compression%20and%20Quantization%20Architecture%20for%20Deep%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Dancer%3A%20Dynamic%20Compression%20and%20Quantization%20Architecture%20for%20Deep%20Graph%20Convolutional%20Network%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "LT-OAQ: Learnable Threshold Based Outlier-Aware Quantization and Its Energy-Efficient Accelerator for Low-Precision On-Chip Training",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_lt_oaq_learnable_threshold_based_outlier_aware_quantization_and_its_en",
+    "library_search_url": "https://search.library.wisc.edu/?q=LT-OAQ%3A%20Learnable%20Threshold%20Based%20Outlier-Aware%20Quantization%20and%20Its%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22LT-OAQ%3A%20Learnable%20Threshold%20Based%20Outlier-Aware%20Quantization%20and%20Its%20Energy-Efficient%20Accelerator%20for%20Low-Precision%20On-Chip%20Training%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "EVASION: Efficient KV CAche CompreSsion vIa PrOduct QuaNtization",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_evasion_efficient_kv_cache_compression_via_product_quantization",
+    "library_search_url": "https://search.library.wisc.edu/?q=EVASION%3A%20Efficient%20KV%20CAche%20CompreSsion%20vIa%20PrOduct%20QuaNtization%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22EVASION%3A%20Efficient%20KV%20CAche%20CompreSsion%20vIa%20PrOduct%20QuaNtization%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Segment-Wise Accumulation: Low-Error Logarithmic Domain Computing for Efficient Large Language Model Inference",
+    "ac": false,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "date2025_segment_wise_accumulation_low_error_logarithmic_domain_computing_for_e",
+    "library_search_url": "https://search.library.wisc.edu/?q=Segment-Wise%20Accumulation%3A%20Low-Error%20Logarithmic%20Domain%20Computing%20for%20Efficient%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Segment-Wise%20Accumulation%3A%20Low-Error%20Logarithmic%20Domain%20Computing%20for%20Efficient%20Large%20Language%20Model%20Inference%22%202025&highlight=true&returnType=SEARCH"
+  }
+]

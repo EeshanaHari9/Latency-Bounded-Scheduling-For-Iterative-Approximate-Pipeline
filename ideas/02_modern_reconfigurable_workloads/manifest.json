@@ -1,0 +1,372 @@
+[
+  {
+    "conference": "DATE_2025",
+    "title": "Cocktail: Chunk-Adaptive Mixed-Precision Quantization for Long-Context LLM Inference",
+    "status": "linked",
+    "local": "Cocktail_Chunk-Adaptive_Mixed-Precision_Quantization_for_Long-Context_LLM_Inference.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "De2r: Unifying DVFS and Early-Exit for Embedded AI Inference Via Reinforcement Learning",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "FineQ: Software-Hardware Co-Design for Low-Bit Fine-Grained Mixed-Precision Quantization of LLMs",
+    "status": "linked",
+    "local": "FineQ_Software-Hardware_Co-Design_for_Low-Bit_Fine-Grained_Mixed-Precision_Quantization_of_LLMs.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "Late Breaking Results: Approximated LUT-Based Neural Networks for FPGA Accelerated Inference",
+    "status": "linked",
+    "local": "Late_Breaking_Results_Approximated_LUT-Based_Neural_Networks_for_FPGA_Accelerated_Inference.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "Late Breaking Results: Leveraging Approximate Computing for Carbon-Aware DNN Accelerators",
+    "status": "linked",
+    "local": "Late_Breaking_Results_Leveraging_Approximate_Computing_for_Carbon-Aware_DNN_Accelerators.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "LightMamba: Efficient Mamba Acceleration on FPGA with Quantization and Hardware Co-Design",
+    "status": "linked",
+    "local": "LightMamba_Efficient_Mamba_Acceleration_on_FPGA_with_Quantization_and_Hardware_Co-design.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "MPTorch-FPGA: A Custom Mixed-Precision Framework for FPGA-Based DNN Training",
+    "status": "linked",
+    "local": "MPTorch-FPGA_A_Custom_Mixed-Precision_Framework_for_FPGA-Based_DNN_Training.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "RGHT-Q: Reconfigurable GEMM Unit for Heterogeneous-Homogeneous Tensor Quantization",
+    "status": "linked",
+    "local": "RGHT-Q_Reconfigurable_GEMM_Unit_for_Heterogeneous-Homogeneous_Tensor_Quantization.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "Dancer: Dynamic Compression and Quantization Architecture for Deep Graph Convolutional Network",
+    "status": "linked",
+    "local": "Dancer_Dynamic_Compression_and_Quantization_Architecture_for_Deep_Graph_Convolutional_Network.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "LT-OAQ: Learnable Threshold Based Outlier-Aware Quantization and Its Energy-Efficient Accelerator for Low-Precision On-Chip Training",
+    "status": "linked",
+    "local": "LT-OAQ_Learnable_Threshold_Based_Outlier-Aware_Quantization_and_its_Energy-Efficient_Accelerator_for_Low-Precision_On-Chip_Training.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "EVASION: Efficient KV CAche CompreSsion vIa PrOduct QuaNtization",
+    "status": "linked",
+    "local": "EVASION_Efficient_KV_CAche_CompreSsion_vIa_PrOduct_QuaNtization.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "TaiChi: Efficient Execution for Multi-DNNs Using Graph-Based Scheduling",
+    "status": "linked",
+    "local": "TaiChi_Efficient_Execution_for_Multi-DNNs_Using_Graph-Based_Scheduling.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "RankMap: Priority-Aware Multi-DNN Manager for Heterogeneous Embedded Devices",
+    "status": "linked",
+    "local": "RankMap_Priority-Aware_Multi-DNN_Manager_for_Heterogeneous_Embedded_Devices.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "Power- and Deadline-Aware Dynamic Inference on Intermittent Computing Systems",
+    "status": "linked",
+    "local": "Power-_and_Deadline-Aware_Dynamic_Inference_on_Intermittent_Computing_Systems.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "SparseInfer: Training-free Prediction of Activation Sparsity for Fast LLM Inference",
+    "status": "linked",
+    "local": "SparseInfer_Training-free_Prediction_of_Activation_Sparsity_for_Fast_LLM_Inference.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "Filter-Based Adaptive Model Pruning for Efficient Incremental Learning on Edge Devices",
+    "status": "linked",
+    "local": "Filter-Based_Adaptive_Model_Pruning_for_Efficient_Incremental_Learning_on_Edge_Devices.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "MCTA: A Multi-Stage Co-Optimized Transformer Accelerator with Energy-Efficient Dynamic Sparse Optimization",
+    "status": "linked",
+    "local": "MCTA_A_Multi-Stage_Co-Optimized_Transformer_Accelerator_with_Energy-Efficient_Dynamic_Sparse_Optimization.pdf"
+  },
+  {
+    "conference": "ISLPED_2025",
+    "title": "Accelerating LLM Inference with Flexible N:M Sparsity via A Fully Digital Compute-in-Memory Accelerator",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISLPED_2025",
+    "title": "A Compact, Low Power Transprecision ALU for Smart Edge Devices",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISLPED_2025",
+    "title": "Efficient Precision-Scalable Hardware for Microscaling (MX) Processing in Robotics Learning",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISLPED_2025",
+    "title": "GAVINA: flexible aggressive undervolting for bit-serial mixed-precision DNN acceleration",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISLPED_2025",
+    "title": "Hybrid Systolic Array Accelerator with Optimized Dataflow for Edge Large Language Model Inference",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISLPED_2025",
+    "title": "Revisiting Reconfigurable Acceleration of Vision Transformer with Patch Pruning",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISLPED_2025",
+    "title": "RIMIX: RISC-V Core with MIXed-Precision SIMD Instruction Extensions Supported by Oracle-Assisted Sub-Network Search for Efficient TinyML",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISLPED_2025",
+    "title": "TruncQuant: Truncation-Ready Quantization for DNNs with Flexible Weight Bit Precision",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "BARQ: Boundary-Aware Regularized Training for Accurate Inference on Computing-in-Memory Accelerators with Low-Precision A/D Conversion",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "Diff-DiT: Temporal Differential Accelerator for Low-bit Diffusion Transformers on FPGA",
+    "status": "linked",
+    "local": "Diff-DiT_Temporal_Differential_Accelerator_for_Low-bit_Diffusion_Transformers_on_FPGA.pdf"
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "MiCo: End-to-End Mixed Precision Neural Network Co-Exploration Framework for Edge AI",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "PAR-CIM: A Precise/Approximate Reconfigurable Digital CIM Macro with 0.35-4b Fractional Mixed-Bitwidth Quantization",
+    "status": "linked",
+    "local": "PAR-CIM_A_Precise_Approximate_Reconfigurable_Digital_CIM_Macro_with_0.35-4b_Fractional_Mixed-Bitwidth_Quantization.pdf"
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "R2T-Tiny: Runtime-Reconfigurable Throughput-Optimized TinyML for Hybrid Inference",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "SiST: Token Similarity and Sparsity Aware Optimization for Transformers on FPGA",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "SpecMamba: Accelerating Mamba Inference on FPGA with Speculative Decoding",
+    "status": "linked",
+    "local": "SpecMamba_Accelerating_Mamba_Inference_on_FPGA_with_Speculative_Decoding.pdf"
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "Discriminate Weight Approximation for Efficient DSP Packing in LLM Accelerators",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "QUARK: Quantization-Enabled Circuit Sharing for Transformer Acceleration by Exploiting Common Patterns in Nonlinear Operations",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCD_2025",
+    "title": "DMP-BFP: Dynamic Mixed-Precision Block Floating-Point and Exponent-Guided Precision Adjustment",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCD_2025",
+    "title": "Early Termination with Activation Sign Prediction for Energy-Efficient CNN Inference Using Sum-of-Power-of-Two Quantization",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCD_2025",
+    "title": "Enhancing Transformer Inference Efficiency on FPGA through Fully Fusion and Integer-Only Quantization Techniques",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCD_2025",
+    "title": "Flame: A Multiplier-Free LLM Accelerator with Dynamic Block Floating Point",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ICCD_2025",
+    "title": "QuFi: Adaptive Tiled Gustavson Output Reuse for Edge Sparse DNN Accelerators",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISCA_2025",
+    "title": "ANSMET: Approximate Nearest Neighbor Search with Near-Memory Processing and Hybrid Early Termination",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISCA_2025",
+    "title": "LightNobel: Improving Sequence Length Limitation in Protein Structure Prediction Model via Adaptive Activation Quantization",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISCA_2025",
+    "title": "MicroScopiQ: Accelerating Foundational Models through Outlier-Aware Microscaling Quantization",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISCA_2025",
+    "title": "Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISCA_2025",
+    "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "ISCA_2025",
+    "title": "Process Only Where You Look: Hardware and Algorithm Co-optimization for Efficient Gaze-Tracked Foveated Rendering in Virtual Reality",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "BitMoD: Bit-serial Mixture-of-Datatype LLM Acceleration",
+    "status": "stub",
+    "local": null
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "EXION: Exploiting Inter- and Intra-Iteration Output Sparsity for Diffusion Models",
+    "status": "linked",
+    "local": "EXION_Exploiting_Inter-and_Intra-Iteration_Output_Sparsity_for_Diffusion_Models.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "FIGLUT: An Energy-Efficient Accelerator Design for FP-INT GEMM Using Look-Up Tables",
+    "status": "linked",
+    "local": "FIGLUT_An_Energy-Efficient_Accelerator_Design_for_FP-INT_GEMM_Using_Look-Up_Tables.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "LUT-DLA: Lookup Table as Efficient Extreme Low-Bit Deep Learning Accelerator",
+    "status": "linked",
+    "local": "LUT-DLA_Lookup_Table_as_Efficient_Extreme_Low-Bit_Deep_Learning_Accelerator.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "MANT: Efficient Low-bit Group Quantization for LLMs via Mathematically Adaptive Numerical Type",
+    "status": "linked",
+    "local": "M-ANT_Efficient_Low-bit_Group_Quantization_for_LLMs_via_Mathematically_Adaptive_Numerical_Type.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "Panacea: Novel DNN Accelerator using Accuracy-Preserving Asymmetric Quantization and Energy-Saving Bit-Slice Sparsity",
+    "status": "linked",
+    "local": "Panacea_Novel_DNN_Accelerator_using_Accuracy-Preserving_Asymmetric_Quantization_and_Energy-Saving_Bit-Slice_Sparsity.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference",
+    "status": "linked",
+    "local": "VQ-LLM_High-performance_Code_Generation_for_Vector_Quantization_Augmented_LLM_Inference.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "SoMa: Identifying, Exploring, and Understanding the DRAM Communication Scheduling Space for DNN Accelerators",
+    "status": "linked",
+    "local": "SoMa_Identifying_Exploring_and_Understanding_the_DRAM_Communication_Scheduling_Space_for_DNN_Accelerators.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "PAISE: PIM-Accelerated Inference Scheduling Engine for Transformer-based LLM",
+    "status": "linked",
+    "local": "PAISE_PIM-Accelerated_Inference_Scheduling_Engine_for_Transformer-based_LLM.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "Adyna: Accelerating Dynamic Neural Networks with Adaptive Scheduling",
+    "status": "linked",
+    "local": "Adyna_Accelerating_Dynamic_Neural_Networks_with_Adaptive_Scheduling.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "Lincoln: Real-Time 50~100B LLM Inference on Consumer Devices with LPDDR-Interfaced, Compute-Enabled Flash Memory",
+    "status": "linked",
+    "local": "Lincoln_Real-Time_50100B_LLM_Inference_on_Consumer_Devices_with_LPDDR-Interfaced_Compute-Enabled_Flash_Memory.pdf"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "GoPIM: GCN-Oriented Pipeline Optimization for PIM Accelerators",
+    "status": "linked",
+    "local": "GoPIM_GCN-Oriented_Pipeline_Optimization_for_PIM_Accelerators.pdf"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "Late Breaking Results Dynamically Scalable Pruning for Transformer-Based Large Language Models",
+    "status": "linked",
+    "local": "Late_Breaking_Results_Dynamically_Scalable_Pruning_for_Transformer-Based_Large_Language_Models.pdf",
+    "auto": true
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "hpca2025 mant efficient low bit group quantization for llms via mathematically ",
+    "status": "linked",
+    "local": "hpca2025_mant_efficient_low_bit_group_quantization_for_llms_via_mathematically_.pdf",
+    "auto": true
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "hpca2025 vq llm high performance code generation for vector quantization augmen",
+    "status": "linked",
+    "local": "hpca2025_vq_llm_high_performance_code_generation_for_vector_quantization_augmen.pdf",
+    "auto": true
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "Bit-slice Architecture for DNN Acceleration with Slice-level Sparsity Enhancement and Exploitation",
+    "status": "linked",
+    "local": "Bit-slice_Architecture_for_DNN_Acceleration_with_Slice-level_Sparsity_Enhancement_and_Exploitation.pdf",
+    "auto": true
+  }
+]

@@ -1,0 +1,5 @@
+Title: MiCo: End-to-End Mixed Precision Neural Network Co-Exploration Framework for Edge AI
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=MiCo%3A%20End-to-End%20Mixed%20Precision%20Neural%20Network%20Co-Exploration%20Framework%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22MiCo%3A%20End-to-End%20Mixed%20Precision%20Neural%20Network%20Co-Exploration%20Framework%20for%20Edge%20AI%22%202025&highlight=true&returnType=SEARCH

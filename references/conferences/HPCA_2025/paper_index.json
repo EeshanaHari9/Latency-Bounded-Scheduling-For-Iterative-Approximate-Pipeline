@@ -1,0 +1,75 @@
+[
+  {
+    "title": "BitMoD: Bit-serial Mixture-of-Datatype LLM Acceleration",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "hpca2025_bitmod_bit_serial_mixture_of_datatype_llm_acceleration",
+    "library_search_url": "https://search.library.wisc.edu/?q=BitMoD%3A%20Bit-serial%20Mixture-of-Datatype%20LLM%20Acceleration%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/10946282/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22BitMoD%3A%20Bit-serial%20Mixture-of-Datatype%20LLM%20Acceleration%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "EXION: Exploiting Inter- and Intra-Iteration Output Sparsity for Diffusion Models",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "hpca2025_exion_exploiting_inter_and_intra_iteration_output_sparsity_for_diffusi",
+    "library_search_url": "https://search.library.wisc.edu/?q=EXION%3A%20Exploiting%20Inter-%20and%20Intra-Iteration%20Output%20Sparsity%20for%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/10946282/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22EXION%3A%20Exploiting%20Inter-%20and%20Intra-Iteration%20Output%20Sparsity%20for%20Diffusion%20Models%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "FIGLUT: An Energy-Efficient Accelerator Design for FP-INT GEMM Using Look-Up Tables",
+    "ac": true,
+    "modern": true,
+    "arxiv": "2503.06862",
+    "local_pdf": "hpca2025_figlut_an_energy_efficient_accelerator_design_for_fp_int_gemm_using_lo.pdf",
+    "slug": "hpca2025_figlut_an_energy_efficient_accelerator_design_for_fp_int_gemm_using_lo",
+    "library_search_url": "https://arxiv.org/pdf/2503.06862.pdf",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/10946282/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22FIGLUT%3A%20An%20Energy-Efficient%20Accelerator%20Design%20for%20FP-INT%20GEMM%20Using%20Look-Up%20Tables%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "LUT-DLA: Lookup Table as Efficient Extreme Low-Bit Deep Learning Accelerator",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "hpca2025_lut_dla_lookup_table_as_efficient_extreme_low_bit_deep_learning_accele",
+    "library_search_url": "https://search.library.wisc.edu/?q=LUT-DLA%3A%20Lookup%20Table%20as%20Efficient%20Extreme%20Low-Bit%20Deep%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/10946282/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22LUT-DLA%3A%20Lookup%20Table%20as%20Efficient%20Extreme%20Low-Bit%20Deep%20Learning%20Accelerator%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "MANT: Efficient Low-bit Group Quantization for LLMs via Mathematically Adaptive Numerical Type",
+    "ac": true,
+    "modern": true,
+    "arxiv": "2502.18755",
+    "local_pdf": "hpca2025_mant_efficient_low_bit_group_quantization_for_llms_via_mathematically_.pdf",
+    "slug": "hpca2025_mant_efficient_low_bit_group_quantization_for_llms_via_mathematically_",
+    "library_search_url": "https://arxiv.org/pdf/2502.18755.pdf",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/10946282/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22MANT%3A%20Efficient%20Low-bit%20Group%20Quantization%20for%20LLMs%20via%20Mathematically%20Adaptive%20Numerical%20Type%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Panacea: Novel DNN Accelerator using Accuracy-Preserving Asymmetric Quantization and Energy-Saving Bit-Slice Sparsity",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "hpca2025_panacea_novel_dnn_accelerator_using_accuracy_preserving_asymmetric_qua",
+    "library_search_url": "https://search.library.wisc.edu/?q=Panacea%3A%20Novel%20DNN%20Accelerator%20using%20Accuracy-Preserving%20Asymmetric%20Quantization%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/10946282/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Panacea%3A%20Novel%20DNN%20Accelerator%20using%20Accuracy-Preserving%20Asymmetric%20Quantization%20and%20Energy-Saving%20Bit-Slice%20Sparsity%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference",
+    "ac": true,
+    "modern": true,
+    "arxiv": "2503.02236",
+    "local_pdf": "hpca2025_vq_llm_high_performance_code_generation_for_vector_quantization_augmen.pdf",
+    "slug": "hpca2025_vq_llm_high_performance_code_generation_for_vector_quantization_augmen",
+    "library_search_url": "https://arxiv.org/pdf/2503.02236.pdf",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/10946282/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22VQ-LLM%3A%20High-performance%20Code%20Generation%20for%20Vector%20Quantization%20Augmented%20LLM%20Inference%22%202025&highlight=true&returnType=SEARCH"
+  }
+]

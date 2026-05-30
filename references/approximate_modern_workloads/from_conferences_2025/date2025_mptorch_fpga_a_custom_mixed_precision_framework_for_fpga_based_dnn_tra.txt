@@ -1,0 +1,9 @@
+Title: MPTorch-FPGA: A Custom Mixed-Precision Framework for FPGA-Based DNN Training
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=MPTorch-FPGA%3A%20A%20Custom%20Mixed-Precision%20Framework%20for%20FPGA-Based%20DNN%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22MPTorch-FPGA%3A%20A%20Custom%20Mixed-Precision%20Framework%20for%20FPGA-Based%20DNN%20Training%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22MPTorch-FPGA%3A%20A%20Custom%20Mixed-Precision%20Framework%20for%20FPGA-Based%20DNN%20Training%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

@@ -1,0 +1,9 @@
+Title: Timing-Driven Approximate Logic Synthesis Based on Double-Chase Grey Wolf Optimizer
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=Timing-Driven%20Approximate%20Logic%20Synthesis%20Based%20on%20Double-Chase%20Grey%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Timing-Driven%20Approximate%20Logic%20Synthesis%20Based%20on%20Double-Chase%20Grey%20Wolf%20Optimizer%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22Timing-Driven%20Approximate%20Logic%20Synthesis%20Based%20on%20Double-Chase%20Grey%20Wolf%20Optimizer%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

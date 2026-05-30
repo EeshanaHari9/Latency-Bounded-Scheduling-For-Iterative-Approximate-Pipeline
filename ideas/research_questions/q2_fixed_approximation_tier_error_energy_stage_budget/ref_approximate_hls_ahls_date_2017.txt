@@ -1,0 +1,6 @@
+Title: Approximate HLS (AHLS) (DATE 2017)
+PDF not found locally.
+
+IEEE/ACM: https://ieeexplore.ieee.org/document/7927098
+UW proxy: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/7927098
+Note: Reis et al. — approximate high-level synthesis framework.

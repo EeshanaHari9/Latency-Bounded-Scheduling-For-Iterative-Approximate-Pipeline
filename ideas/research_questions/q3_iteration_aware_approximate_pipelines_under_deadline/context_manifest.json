@@ -1,0 +1,42 @@
+[
+  {
+    "conference": "HPCA_2025",
+    "title": "EXION: Exploiting Inter- and Intra-Iteration Output Sparsity for Diffusion Models",
+    "status": "linked"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "Cocktail: Chunk-Adaptive Mixed-Precision Quantization for Long-Context LLM Inference",
+    "status": "linked"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "SparseInfer: Training-free Prediction of Activation Sparsity for Fast LLM Inference",
+    "status": "linked"
+  },
+  {
+    "conference": "ISCA_2025",
+    "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
+    "status": "stub"
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "SpecMamba: Accelerating Mamba Inference on FPGA with Speculative Decoding",
+    "status": "linked"
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "Diff-DiT: Temporal Differential Accelerator for Low-bit Diffusion Transformers on FPGA",
+    "status": "linked"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "Lincoln: Real-Time 50~100B LLM Inference on Consumer Devices with LPDDR-Interfaced, Compute-Enabled Flash Memory",
+    "status": "linked"
+  },
+  {
+    "ref": "soni2022_asis_anytime_iterative_approximate_acm_tac.pdf",
+    "kind": "foundation",
+    "status": "stub"
+  }
+]

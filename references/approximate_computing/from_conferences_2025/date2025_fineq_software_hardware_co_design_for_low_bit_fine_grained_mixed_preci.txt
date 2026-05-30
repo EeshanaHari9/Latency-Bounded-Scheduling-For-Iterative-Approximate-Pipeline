@@ -1,0 +1,9 @@
+Title: FineQ: Software-Hardware Co-Design for Low-Bit Fine-Grained Mixed-Precision Quantization of LLMs
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=FineQ%3A%20Software-Hardware%20Co-Design%20for%20Low-Bit%20Fine-Grained%20Mixed-Precision%20Quantization%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22FineQ%3A%20Software-Hardware%20Co-Design%20for%20Low-Bit%20Fine-Grained%20Mixed-Precision%20Quantization%20of%20LLMs%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22FineQ%3A%20Software-Hardware%20Co-Design%20for%20Low-Bit%20Fine-Grained%20Mixed-Precision%20Quantization%20of%20LLMs%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

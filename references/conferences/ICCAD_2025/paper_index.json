@@ -1,0 +1,113 @@
+[
+  {
+    "title": "ApproxGNN: A Pretrained GNN for Parameter Prediction in Design Space Exploration for Approximate Computing",
+    "ac": true,
+    "modern": false,
+    "url": "https://www.fit.vut.cz/research/result/c197688/.en",
+    "local_pdf": null,
+    "slug": "iccad2025_approxgnn_a_pretrained_gnn_for_parameter_prediction_in_design_space_ex",
+    "library_search_url": "https://www.fit.vut.cz/research/result/c197688/.en",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22ApproxGNN%3A%20A%20Pretrained%20GNN%20for%20Parameter%20Prediction%20in%20Design%20Space%20Exploration%20for%20Approximate%20Computing%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "BARQ: Boundary-Aware Regularized Training for Accurate Inference on Computing-in-Memory Accelerators with Low-Precision A/D Conversion",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccad2025_barq_boundary_aware_regularized_training_for_accurate_inference_on_com",
+    "library_search_url": "https://search.library.wisc.edu/?q=BARQ%3A%20Boundary-Aware%20Regularized%20Training%20for%20Accurate%20Inference%20on%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22BARQ%3A%20Boundary-Aware%20Regularized%20Training%20for%20Accurate%20Inference%20on%20Computing-in-Memory%20Accelerators%20with%20Low-Precision%20A%2FD%20Conversion%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Diff-DiT: Temporal Differential Accelerator for Low-bit Diffusion Transformers on FPGA",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccad2025_diff_dit_temporal_differential_accelerator_for_low_bit_diffusion_trans",
+    "library_search_url": "https://search.library.wisc.edu/?q=Diff-DiT%3A%20Temporal%20Differential%20Accelerator%20for%20Low-bit%20Diffusion%20Transformers%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Diff-DiT%3A%20Temporal%20Differential%20Accelerator%20for%20Low-bit%20Diffusion%20Transformers%20on%20FPGA%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "MiCo: End-to-End Mixed Precision Neural Network Co-Exploration Framework for Edge AI",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccad2025_mico_end_to_end_mixed_precision_neural_network_co_exploration_framewor",
+    "library_search_url": "https://search.library.wisc.edu/?q=MiCo%3A%20End-to-End%20Mixed%20Precision%20Neural%20Network%20Co-Exploration%20Framework%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22MiCo%3A%20End-to-End%20Mixed%20Precision%20Neural%20Network%20Co-Exploration%20Framework%20for%20Edge%20AI%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "PAR-CIM: A Precise/Approximate Reconfigurable Digital CIM Macro with 0.35-4b Fractional Mixed-Bitwidth Quantization",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccad2025_par_cim_a_precise_approximate_reconfigurable_digital_cim_macro_with_0_",
+    "library_search_url": "https://search.library.wisc.edu/?q=PAR-CIM%3A%20A%20Precise/Approximate%20Reconfigurable%20Digital%20CIM%20Macro%20with%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22PAR-CIM%3A%20A%20Precise%2FApproximate%20Reconfigurable%20Digital%20CIM%20Macro%20with%200.35-4b%20Fractional%20Mixed-Bitwidth%20Quantization%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "R2T-Tiny: Runtime-Reconfigurable Throughput-Optimized TinyML for Hybrid Inference",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccad2025_r2t_tiny_runtime_reconfigurable_throughput_optimized_tinyml_for_hybrid",
+    "library_search_url": "https://search.library.wisc.edu/?q=R2T-Tiny%3A%20Runtime-Reconfigurable%20Throughput-Optimized%20TinyML%20for%20Hybrid%20Inference%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22R2T-Tiny%3A%20Runtime-Reconfigurable%20Throughput-Optimized%20TinyML%20for%20Hybrid%20Inference%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "SERA-Float: A Soft Error Resilient Approximate Floating-Point Computing Format",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "iccad2025_sera_float_a_soft_error_resilient_approximate_floating_point_computing",
+    "library_search_url": "https://search.library.wisc.edu/?q=SERA-Float%3A%20A%20Soft%20Error%20Resilient%20Approximate%20Floating-Point%20Computing%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22SERA-Float%3A%20A%20Soft%20Error%20Resilient%20Approximate%20Floating-Point%20Computing%20Format%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "SiST: Token Similarity and Sparsity Aware Optimization for Transformers on FPGA",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccad2025_sist_token_similarity_and_sparsity_aware_optimization_for_transformers",
+    "library_search_url": "https://search.library.wisc.edu/?q=SiST%3A%20Token%20Similarity%20and%20Sparsity%20Aware%20Optimization%20for%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22SiST%3A%20Token%20Similarity%20and%20Sparsity%20Aware%20Optimization%20for%20Transformers%20on%20FPGA%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "SpecMamba: Accelerating Mamba Inference on FPGA with Speculative Decoding",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccad2025_specmamba_accelerating_mamba_inference_on_fpga_with_speculative_decodi",
+    "library_search_url": "https://search.library.wisc.edu/?q=SpecMamba%3A%20Accelerating%20Mamba%20Inference%20on%20FPGA%20with%20Speculative%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22SpecMamba%3A%20Accelerating%20Mamba%20Inference%20on%20FPGA%20with%20Speculative%20Decoding%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Discriminate Weight Approximation for Efficient DSP Packing in LLM Accelerators",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccad2025_discriminate_weight_approximation_for_efficient_dsp_packing_in_llm_acc",
+    "library_search_url": "https://search.library.wisc.edu/?q=Discriminate%20Weight%20Approximation%20for%20Efficient%20DSP%20Packing%20in%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Discriminate%20Weight%20Approximation%20for%20Efficient%20DSP%20Packing%20in%20LLM%20Accelerators%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "QUARK: Quantization-Enabled Circuit Sharing for Transformer Acceleration by Exploiting Common Patterns in Nonlinear Operations",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccad2025_quark_quantization_enabled_circuit_sharing_for_transformer_acceleratio",
+    "library_search_url": "https://search.library.wisc.edu/?q=QUARK%3A%20Quantization-Enabled%20Circuit%20Sharing%20for%20Transformer%20Acceleration%20by%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22QUARK%3A%20Quantization-Enabled%20Circuit%20Sharing%20for%20Transformer%20Acceleration%20by%20Exploiting%20Common%20Patterns%20in%20Nonlinear%20Operations%22%202025&highlight=true&returnType=SEARCH"
+  }
+]

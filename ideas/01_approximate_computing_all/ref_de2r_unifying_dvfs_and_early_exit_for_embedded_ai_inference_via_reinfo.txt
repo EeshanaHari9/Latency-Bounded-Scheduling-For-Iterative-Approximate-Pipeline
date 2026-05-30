@@ -1,0 +1,5 @@
+Title: De2r: Unifying DVFS and Early-Exit for Embedded AI Inference Via Reinforcement Learning
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=De2r%3A%20Unifying%20DVFS%20and%20Early-Exit%20for%20Embedded%20AI%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22De2r%3A%20Unifying%20DVFS%20and%20Early-Exit%20for%20Embedded%20AI%20Inference%20Via%20Reinforcement%20Learning%22%202025&highlight=true&returnType=SEARCH

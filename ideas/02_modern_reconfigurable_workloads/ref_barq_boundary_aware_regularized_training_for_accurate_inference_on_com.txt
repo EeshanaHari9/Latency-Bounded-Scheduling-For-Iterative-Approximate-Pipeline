@@ -1,0 +1,5 @@
+Title: BARQ: Boundary-Aware Regularized Training for Accurate Inference on Computing-in-Memory Accelerators with Low-Precision A/D Conversion
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=BARQ%3A%20Boundary-Aware%20Regularized%20Training%20for%20Accurate%20Inference%20on%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22BARQ%3A%20Boundary-Aware%20Regularized%20Training%20for%20Accurate%20Inference%20on%20Computing-in-Memory%20Accelerators%20with%20Low-Precision%20A%2FD%20Conversion%22%202025&highlight=true&returnType=SEARCH

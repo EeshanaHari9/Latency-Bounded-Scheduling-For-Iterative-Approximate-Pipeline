@@ -1,0 +1,5 @@
+Title: DMP-BFP: Dynamic Mixed-Precision Block Floating-Point and Exponent-Guided Precision Adjustment
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=DMP-BFP%3A%20Dynamic%20Mixed-Precision%20Block%20Floating-Point%20and%20Exponent-Guided%20Precision%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22DMP-BFP%3A%20Dynamic%20Mixed-Precision%20Block%20Floating-Point%20and%20Exponent-Guided%20Precision%20Adjustment%22%202025&highlight=true&returnType=SEARCH

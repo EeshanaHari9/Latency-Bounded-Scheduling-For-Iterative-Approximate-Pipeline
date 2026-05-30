@@ -1,0 +1,5 @@
+Title: Early Termination with Activation Sign Prediction for Energy-Efficient CNN Inference Using Sum-of-Power-of-Two Quantization
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=Early%20Termination%20with%20Activation%20Sign%20Prediction%20for%20Energy-Efficient%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Early%20Termination%20with%20Activation%20Sign%20Prediction%20for%20Energy-Efficient%20CNN%20Inference%20Using%20Sum-of-Power-of-Two%20Quantization%22%202025&highlight=true&returnType=SEARCH

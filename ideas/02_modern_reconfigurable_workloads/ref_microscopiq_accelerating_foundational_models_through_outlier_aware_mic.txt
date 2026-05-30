@@ -1,0 +1,5 @@
+Title: MicroScopiQ: Accelerating Foundational Models through Outlier-Aware Microscaling Quantization
+PDF not found locally.
+
+UW Library search: https://arxiv.org/pdf/2411.05282.pdf
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22MicroScopiQ%3A%20Accelerating%20Foundational%20Models%20through%20Outlier-Aware%20Microscaling%20Quantization%22&startPage=0&pageSize=25

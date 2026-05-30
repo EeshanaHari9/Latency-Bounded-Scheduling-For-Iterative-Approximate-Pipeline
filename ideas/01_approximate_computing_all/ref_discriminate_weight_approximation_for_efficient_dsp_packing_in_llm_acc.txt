@@ -1,0 +1,5 @@
+Title: Discriminate Weight Approximation for Efficient DSP Packing in LLM Accelerators
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=Discriminate%20Weight%20Approximation%20for%20Efficient%20DSP%20Packing%20in%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Discriminate%20Weight%20Approximation%20for%20Efficient%20DSP%20Packing%20in%20LLM%20Accelerators%22%202025&highlight=true&returnType=SEARCH

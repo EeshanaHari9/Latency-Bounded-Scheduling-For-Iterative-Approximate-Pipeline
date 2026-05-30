@@ -1,0 +1,9 @@
+Title: ApproxGNN: A Pretrained GNN for Parameter Prediction in Design Space Exploration for Approximate Computing
+Conference: ICCAD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://www.fit.vut.cz/research/result/c197688/.en
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22ApproxGNN%3A%20A%20Pretrained%20GNN%20for%20Parameter%20Prediction%20in%20Design%20Space%20Exploration%20for%20Approximate%20Computing%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22ApproxGNN%3A%20A%20Pretrained%20GNN%20for%20Parameter%20Prediction%20in%20Design%20Space%20Exploration%20for%20Approximate%20Computing%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding

@@ -1,0 +1,5 @@
+Title: ApproxGNN: A Pretrained GNN for Parameter Prediction in Design Space Exploration for Approximate Computing
+PDF not found locally.
+
+UW Library search: https://www.fit.vut.cz/research/result/c197688/.en
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22ApproxGNN%3A%20A%20Pretrained%20GNN%20for%20Parameter%20Prediction%20in%20Design%20Space%20Exploration%20for%20Approximate%20Computing%22%202025&highlight=true&returnType=SEARCH

@@ -1,0 +1,5 @@
+Title: LightNobel: Improving Sequence Length Limitation in Protein Structure Prediction Model via Adaptive Activation Quantization
+PDF not found locally.
+
+UW Library search: https://arxiv.org/pdf/2411.05282.pdf
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22LightNobel%3A%20Improving%20Sequence%20Length%20Limitation%20in%20Protein%20Structure%20Prediction%20Model%20via%20Adaptive%20Activation%20Quantization%22&startPage=0&pageSize=25

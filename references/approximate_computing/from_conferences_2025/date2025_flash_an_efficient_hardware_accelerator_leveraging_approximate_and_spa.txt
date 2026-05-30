@@ -1,0 +1,9 @@
+Title: FLASH: An Efficient Hardware Accelerator Leveraging Approximate and Sparse FFT for Homomorphic Encryption
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=FLASH%3A%20An%20Efficient%20Hardware%20Accelerator%20Leveraging%20Approximate%20and%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22FLASH%3A%20An%20Efficient%20Hardware%20Accelerator%20Leveraging%20Approximate%20and%20Sparse%20FFT%20for%20Homomorphic%20Encryption%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22FLASH%3A%20An%20Efficient%20Hardware%20Accelerator%20Leveraging%20Approximate%20and%20Sparse%20FFT%20for%20Homomorphic%20Encryption%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

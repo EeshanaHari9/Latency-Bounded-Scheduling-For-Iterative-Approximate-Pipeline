@@ -1,0 +1,9 @@
+Title: Late Breaking Results: Approximated LUT-Based Neural Networks for FPGA Accelerated Inference
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=Late%20Breaking%20Results%3A%20Approximated%20LUT-Based%20Neural%20Networks%20for%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Late%20Breaking%20Results%3A%20Approximated%20LUT-Based%20Neural%20Networks%20for%20FPGA%20Accelerated%20Inference%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22Late%20Breaking%20Results%3A%20Approximated%20LUT-Based%20Neural%20Networks%20for%20FPGA%20Accelerated%20Inference%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

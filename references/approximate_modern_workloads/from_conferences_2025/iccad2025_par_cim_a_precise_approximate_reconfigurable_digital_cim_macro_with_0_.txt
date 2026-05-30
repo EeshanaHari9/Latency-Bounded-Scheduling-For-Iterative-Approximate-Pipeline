@@ -1,0 +1,9 @@
+Title: PAR-CIM: A Precise/Approximate Reconfigurable Digital CIM Macro with 0.35-4b Fractional Mixed-Bitwidth Quantization
+Conference: ICCAD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=PAR-CIM%3A%20A%20Precise/Approximate%20Reconfigurable%20Digital%20CIM%20Macro%20with%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22PAR-CIM%3A%20A%20Precise%2FApproximate%20Reconfigurable%20Digital%20CIM%20Macro%20with%200.35-4b%20Fractional%20Mixed-Bitwidth%20Quantization%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22PAR-CIM%3A%20A%20Precise%2FApproximate%20Reconfigurable%20Digital%20CIM%20Macro%20with%200.35-4b%20Fractional%20Mixed-Bitwidth%20Quantization%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding

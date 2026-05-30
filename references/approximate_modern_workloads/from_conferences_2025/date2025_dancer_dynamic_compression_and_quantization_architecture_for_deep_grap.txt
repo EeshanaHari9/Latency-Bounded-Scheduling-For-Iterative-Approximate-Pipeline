@@ -1,0 +1,9 @@
+Title: Dancer: Dynamic Compression and Quantization Architecture for Deep Graph Convolutional Network
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=Dancer%3A%20Dynamic%20Compression%20and%20Quantization%20Architecture%20for%20Deep%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Dancer%3A%20Dynamic%20Compression%20and%20Quantization%20Architecture%20for%20Deep%20Graph%20Convolutional%20Network%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22Dancer%3A%20Dynamic%20Compression%20and%20Quantization%20Architecture%20for%20Deep%20Graph%20Convolutional%20Network%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

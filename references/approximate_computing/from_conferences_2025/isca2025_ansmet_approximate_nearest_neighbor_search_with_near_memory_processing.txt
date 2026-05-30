@@ -1,0 +1,9 @@
+Title: ANSMET: Approximate Nearest Neighbor Search with Near-Memory Processing and Hybrid Early Termination
+Conference: ISCA_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=ANSMET%3A%20Approximate%20Nearest%20Neighbor%20Search%20with%20Near-Memory%20Processing%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22ANSMET%3A%20Approximate%20Nearest%20Neighbor%20Search%20with%20Near-Memory%20Processing%20and%20Hybrid%20Early%20Termination%22&startPage=0&pageSize=25
+3. IEEE/ACM search (hostname proxy): https://dl-acm-org.ezproxy.library.wisc.edu/action/doSearch?AllField=%22ANSMET%3A%20Approximate%20Nearest%20Neighbor%20Search%20with%20Near-Memory%20Processing%20and%20Hybrid%20Early%20Termination%22&startPage=0&pageSize=25
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053

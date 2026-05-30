@@ -1,0 +1,47 @@
+[
+  {
+    "conference": "DATE_2025",
+    "title": "TaiChi: Efficient Execution for Multi-DNNs Using Graph-Based Scheduling",
+    "status": "linked"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "RankMap: Priority-Aware Multi-DNN Manager for Heterogeneous Embedded Devices",
+    "status": "linked"
+  },
+  {
+    "conference": "DATE_2025",
+    "title": "Power- and Deadline-Aware Dynamic Inference on Intermittent Computing Systems",
+    "status": "linked"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "SoMa: Identifying, Exploring, and Understanding the DRAM Communication Scheduling Space for DNN Accelerators",
+    "status": "linked"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "PAISE: PIM-Accelerated Inference Scheduling Engine for Transformer-based LLM",
+    "status": "linked"
+  },
+  {
+    "conference": "HPCA_2025",
+    "title": "Adyna: Accelerating Dynamic Neural Networks with Adaptive Scheduling",
+    "status": "linked"
+  },
+  {
+    "conference": "ICCAD_2025",
+    "title": "R2T-Tiny: Runtime-Reconfigurable Throughput-Optimized TinyML for Hybrid Inference",
+    "status": "stub"
+  },
+  {
+    "ref": "behroozi2021_iterative_hardware_scheduling_isvlsi.pdf",
+    "kind": "foundation",
+    "status": "stub"
+  },
+  {
+    "ref": "a14_PT-Map_Efficient_Program_Transformation_Optimization_for_CGRA.pdf",
+    "kind": "foundation",
+    "status": "stub"
+  }
+]

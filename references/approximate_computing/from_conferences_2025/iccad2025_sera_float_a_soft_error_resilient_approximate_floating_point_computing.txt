@@ -1,0 +1,9 @@
+Title: SERA-Float: A Soft Error Resilient Approximate Floating-Point Computing Format
+Conference: ICCAD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=SERA-Float%3A%20A%20Soft%20Error%20Resilient%20Approximate%20Floating-Point%20Computing%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22SERA-Float%3A%20A%20Soft%20Error%20Resilient%20Approximate%20Floating-Point%20Computing%20Format%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22SERA-Float%3A%20A%20Soft%20Error%20Resilient%20Approximate%20Floating-Point%20Computing%20Format%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding

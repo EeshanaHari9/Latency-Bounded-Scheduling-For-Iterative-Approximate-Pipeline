@@ -1,0 +1,73 @@
+{
+  "DATE_2025": [
+    {"title": "Cocktail: Chunk-Adaptive Mixed-Precision Quantization for Long-Context LLM Inference", "ac": true, "modern": true},
+    {"title": "De2r: Unifying DVFS and Early-Exit for Embedded AI Inference Via Reinforcement Learning", "ac": true, "modern": true},
+    {"title": "Efficient Approximate Logic Synthesis with Dual-Phase Iterative Framework", "ac": true, "modern": false},
+    {"title": "Efficient Approximate Nearest Neighbor Search Via Data-Adaptive Parameter Adjustment in Hierarchical Navigable Small Graphs", "ac": true, "modern": false},
+    {"title": "FineQ: Software-Hardware Co-Design for Low-Bit Fine-Grained Mixed-Precision Quantization of LLMs", "ac": true, "modern": true},
+    {"title": "FLASH: An Efficient Hardware Accelerator Leveraging Approximate and Sparse FFT for Homomorphic Encryption", "ac": true, "modern": false},
+    {"title": "Gradient Approximation of Approximate Multipliers for High-Accuracy Deep Neural Network Retraining", "ac": true, "modern": false},
+    {"title": "Late Breaking Results: Approximated LUT-Based Neural Networks for FPGA Accelerated Inference", "ac": true, "modern": true},
+    {"title": "Late Breaking Results: Leveraging Approximate Computing for Carbon-Aware DNN Accelerators", "ac": true, "modern": true},
+    {"title": "LightMamba: Efficient Mamba Acceleration on FPGA with Quantization and Hardware Co-Design", "ac": true, "modern": true},
+    {"title": "MPTorch-FPGA: A Custom Mixed-Precision Framework for FPGA-Based DNN Training", "ac": true, "modern": true},
+    {"title": "RGHT-Q: Reconfigurable GEMM Unit for Heterogeneous-Homogeneous Tensor Quantization", "ac": true, "modern": true},
+    {"title": "SoftEx: A Low Power and Flexible Softmax Accelerator with Fast Approximate Exponentiation", "ac": true, "modern": false},
+    {"title": "Timing-Driven Approximate Logic Synthesis Based on Double-Chase Grey Wolf Optimizer", "ac": true, "modern": false}
+  ],
+  "ISLPED_2025": [
+    {"title": "Accelerating LLM Inference with Flexible N:M Sparsity via A Fully Digital Compute-in-Memory Accelerator", "ac": true, "modern": true},
+    {"title": "A Compact, Low Power Transprecision ALU for Smart Edge Devices", "ac": true, "modern": true},
+    {"title": "Efficient Precision-Scalable Hardware for Microscaling (MX) Processing in Robotics Learning", "ac": true, "modern": true},
+    {"title": "GAVINA: flexible aggressive undervolting for bit-serial mixed-precision DNN acceleration", "ac": true, "modern": true},
+    {"title": "Hybrid Systolic Array Accelerator with Optimized Dataflow for Edge Large Language Model Inference", "ac": true, "modern": true},
+    {"title": "QuAKE: Speeding up Model Inference Using Quick and Approximate Kernels for Exponential Non-Linearities", "ac": true, "modern": false},
+    {"title": "Revisiting Reconfigurable Acceleration of Vision Transformer with Patch Pruning", "ac": true, "modern": true},
+    {"title": "RIMIX: RISC-V Core with MIXed-Precision SIMD Instruction Extensions Supported by Oracle-Assisted Sub-Network Search for Efficient TinyML", "ac": true, "modern": true},
+    {"title": "TruncQuant: Truncation-Ready Quantization for DNNs with Flexible Weight Bit Precision", "ac": true, "modern": true}
+  ],
+  "ICCAD_2025": [
+    {"title": "ApproxGNN: A Pretrained GNN for Parameter Prediction in Design Space Exploration for Approximate Computing", "ac": true, "modern": false, "url": "https://www.fit.vut.cz/research/result/c197688/.en"},
+    {"title": "BARQ: Boundary-Aware Regularized Training for Accurate Inference on Computing-in-Memory Accelerators with Low-Precision A/D Conversion", "ac": true, "modern": true},
+    {"title": "Diff-DiT: Temporal Differential Accelerator for Low-bit Diffusion Transformers on FPGA", "ac": true, "modern": true},
+    {"title": "MiCo: End-to-End Mixed Precision Neural Network Co-Exploration Framework for Edge AI", "ac": true, "modern": true},
+    {"title": "PAR-CIM: A Precise/Approximate Reconfigurable Digital CIM Macro with 0.35-4b Fractional Mixed-Bitwidth Quantization", "ac": true, "modern": true},
+    {"title": "R2T-Tiny: Runtime-Reconfigurable Throughput-Optimized TinyML for Hybrid Inference", "ac": true, "modern": true},
+    {"title": "SERA-Float: A Soft Error Resilient Approximate Floating-Point Computing Format", "ac": true, "modern": false},
+    {"title": "SiST: Token Similarity and Sparsity Aware Optimization for Transformers on FPGA", "ac": true, "modern": true},
+    {"title": "SpecMamba: Accelerating Mamba Inference on FPGA with Speculative Decoding", "ac": true, "modern": true}
+  ],
+  "ICCD_2025": [
+    {"title": "DMP-BFP: Dynamic Mixed-Precision Block Floating-Point and Exponent-Guided Precision Adjustment", "ac": true, "modern": true},
+    {"title": "Early Termination with Activation Sign Prediction for Energy-Efficient CNN Inference Using Sum-of-Power-of-Two Quantization", "ac": true, "modern": true},
+    {"title": "Enhancing Transformer Inference Efficiency on FPGA through Fully Fusion and Integer-Only Quantization Techniques", "ac": true, "modern": true},
+    {"title": "Flame: A Multiplier-Free LLM Accelerator with Dynamic Block Floating Point", "ac": true, "modern": true},
+    {"title": "Hardware Efficient Multiplier design using an Optimal mix of Approximate Booth Encodings", "ac": true, "modern": false},
+    {"title": "PACE-lite: Compact and Efficient Piecewise Polynomial Approximation for Transformer Nonlinearity Acceleration", "ac": true, "modern": false},
+    {"title": "QuFi: Adaptive Tiled Gustavson Output Reuse for Edge Sparse DNN Accelerators", "ac": true, "modern": true}
+  ],
+  "ISCA_2025": [
+    {"title": "ANSMET: Approximate Nearest Neighbor Search with Near-Memory Processing and Hybrid Early Termination", "ac": true, "modern": true},
+    {"title": "AQB8: Energy-Efficient Ray Tracing Accelerator through Multi-Level Quantization", "ac": true, "modern": false},
+    {"title": "LightNobel: Improving Sequence Length Limitation in Protein Structure Prediction Model via Adaptive Activation Quantization", "ac": true, "modern": true, "arxiv": "2411.05282"},
+    {"title": "MicroScopiQ: Accelerating Foundational Models through Outlier-Aware Microscaling Quantization", "ac": true, "modern": true, "arxiv": "2411.05282"},
+    {"title": "Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization", "ac": true, "modern": true},
+    {"title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting", "ac": true, "modern": true},
+    {"title": "Process Only Where You Look: Hardware and Algorithm Co-optimization for Efficient Gaze-Tracked Foveated Rendering in Virtual Reality", "ac": true, "modern": true}
+  ],
+  "HPCA_2025": [
+    {"title": "BitMoD: Bit-serial Mixture-of-Datatype LLM Acceleration", "ac": true, "modern": true},
+    {"title": "EXION: Exploiting Inter- and Intra-Iteration Output Sparsity for Diffusion Models", "ac": true, "modern": true},
+    {"title": "FIGLUT: An Energy-Efficient Accelerator Design for FP-INT GEMM Using Look-Up Tables", "ac": true, "modern": true, "arxiv": "2503.06862"},
+    {"title": "LUT-DLA: Lookup Table as Efficient Extreme Low-Bit Deep Learning Accelerator", "ac": true, "modern": true},
+    {"title": "MANT: Efficient Low-bit Group Quantization for LLMs via Mathematically Adaptive Numerical Type", "ac": true, "modern": true, "arxiv": "2502.18755"},
+    {"title": "Panacea: Novel DNN Accelerator using Accuracy-Preserving Asymmetric Quantization and Energy-Saving Bit-Slice Sparsity", "ac": true, "modern": true},
+    {"title": "VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference", "ac": true, "modern": true, "arxiv": "2503.02236"}
+  ],
+  "downloads": {
+    "FIGLUT: An Energy-Efficient Accelerator Design for FP-INT GEMM Using Look-Up Tables": "https://arxiv.org/pdf/2503.06862.pdf",
+    "MANT: Efficient Low-bit Group Quantization for LLMs via Mathematically Adaptive Numerical Type": "https://arxiv.org/pdf/2502.18755.pdf",
+    "VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference": "https://arxiv.org/pdf/2503.02236.pdf",
+    "MicroScopiQ: Accelerating Foundational Models through Outlier-Aware Microscaling Quantization": "https://arxiv.org/pdf/2411.05282.pdf"
+  }
+}

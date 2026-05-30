@@ -1,0 +1,5 @@
+Title: RIMIX: RISC-V Core with MIXed-Precision SIMD Instruction Extensions Supported by Oracle-Assisted Sub-Network Search for Efficient TinyML
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=RIMIX%3A%20RISC-V%20Core%20with%20MIXed-Precision%20SIMD%20Instruction%20Extensions%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22RIMIX%3A%20RISC-V%20Core%20with%20MIXed-Precision%20SIMD%20Instruction%20Extensions%20Supported%20by%20Oracle-Assisted%20Sub-Network%20Search%20for%20Efficient%20TinyML%22%202025&highlight=true&returnType=SEARCH

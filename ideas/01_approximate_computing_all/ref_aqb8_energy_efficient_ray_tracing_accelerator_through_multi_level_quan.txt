@@ -1,0 +1,5 @@
+Title: AQB8: Energy-Efficient Ray Tracing Accelerator through Multi-Level Quantization
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=AQB8%3A%20Energy-Efficient%20Ray%20Tracing%20Accelerator%20through%20Multi-Level%20Quantization%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22AQB8%3A%20Energy-Efficient%20Ray%20Tracing%20Accelerator%20through%20Multi-Level%20Quantization%22&startPage=0&pageSize=25

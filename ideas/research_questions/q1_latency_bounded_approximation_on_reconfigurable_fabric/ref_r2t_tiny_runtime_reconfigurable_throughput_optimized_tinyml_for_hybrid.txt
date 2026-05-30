@@ -1,0 +1,5 @@
+Title: R2T-Tiny: Runtime-Reconfigurable Throughput-Optimized TinyML for Hybrid Inference
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=R2T-Tiny%3A%20Runtime-Reconfigurable%20Throughput-Optimized%20TinyML%20for%20Hybrid%20Inference%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22R2T-Tiny%3A%20Runtime-Reconfigurable%20Throughput-Optimized%20TinyML%20for%20Hybrid%20Inference%22%202025&highlight=true&returnType=SEARCH

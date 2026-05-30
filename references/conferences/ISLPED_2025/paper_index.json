@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Accelerating LLM Inference with Flexible N:M Sparsity via A Fully Digital Compute-in-Memory Accelerator",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "islped2025_accelerating_llm_inference_with_flexible_n_m_sparsity_via_a_fully_digi",
+    "library_search_url": "https://search.library.wisc.edu/?q=Accelerating%20LLM%20Inference%20with%20Flexible%20N%3AM%20Sparsity%20via%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Accelerating%20LLM%20Inference%20with%20Flexible%20N%3AM%20Sparsity%20via%20A%20Fully%20Digital%20Compute-in-Memory%20Accelerator%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "A Compact, Low Power Transprecision ALU for Smart Edge Devices",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "islped2025_a_compact_low_power_transprecision_alu_for_smart_edge_devices",
+    "library_search_url": "https://search.library.wisc.edu/?q=A%20Compact%2C%20Low%20Power%20Transprecision%20ALU%20for%20Smart%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22A%20Compact%2C%20Low%20Power%20Transprecision%20ALU%20for%20Smart%20Edge%20Devices%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Efficient Precision-Scalable Hardware for Microscaling (MX) Processing in Robotics Learning",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "islped2025_efficient_precision_scalable_hardware_for_microscaling_mx_processing_i",
+    "library_search_url": "https://search.library.wisc.edu/?q=Efficient%20Precision-Scalable%20Hardware%20for%20Microscaling%20%28MX%29%20Processing%20in%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Efficient%20Precision-Scalable%20Hardware%20for%20Microscaling%20%28MX%29%20Processing%20in%20Robotics%20Learning%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "GAVINA: flexible aggressive undervolting for bit-serial mixed-precision DNN acceleration",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "islped2025_gavina_flexible_aggressive_undervolting_for_bit_serial_mixed_precision",
+    "library_search_url": "https://search.library.wisc.edu/?q=GAVINA%3A%20flexible%20aggressive%20undervolting%20for%20bit-serial%20mixed-precision%20DNN%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22GAVINA%3A%20flexible%20aggressive%20undervolting%20for%20bit-serial%20mixed-precision%20DNN%20acceleration%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Hybrid Systolic Array Accelerator with Optimized Dataflow for Edge Large Language Model Inference",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "islped2025_hybrid_systolic_array_accelerator_with_optimized_dataflow_for_edge_lar",
+    "library_search_url": "https://search.library.wisc.edu/?q=Hybrid%20Systolic%20Array%20Accelerator%20with%20Optimized%20Dataflow%20for%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Hybrid%20Systolic%20Array%20Accelerator%20with%20Optimized%20Dataflow%20for%20Edge%20Large%20Language%20Model%20Inference%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "QuAKE: Speeding up Model Inference Using Quick and Approximate Kernels for Exponential Non-Linearities",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "islped2025_quake_speeding_up_model_inference_using_quick_and_approximate_kernels_",
+    "library_search_url": "https://search.library.wisc.edu/?q=QuAKE%3A%20Speeding%20up%20Model%20Inference%20Using%20Quick%20and%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22QuAKE%3A%20Speeding%20up%20Model%20Inference%20Using%20Quick%20and%20Approximate%20Kernels%20for%20Exponential%20Non-Linearities%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Revisiting Reconfigurable Acceleration of Vision Transformer with Patch Pruning",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "islped2025_revisiting_reconfigurable_acceleration_of_vision_transformer_with_patc",
+    "library_search_url": "https://search.library.wisc.edu/?q=Revisiting%20Reconfigurable%20Acceleration%20of%20Vision%20Transformer%20with%20Patch%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Revisiting%20Reconfigurable%20Acceleration%20of%20Vision%20Transformer%20with%20Patch%20Pruning%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "RIMIX: RISC-V Core with MIXed-Precision SIMD Instruction Extensions Supported by Oracle-Assisted Sub-Network Search for Efficient TinyML",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "islped2025_rimix_risc_v_core_with_mixed_precision_simd_instruction_extensions_sup",
+    "library_search_url": "https://search.library.wisc.edu/?q=RIMIX%3A%20RISC-V%20Core%20with%20MIXed-Precision%20SIMD%20Instruction%20Extensions%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22RIMIX%3A%20RISC-V%20Core%20with%20MIXed-Precision%20SIMD%20Instruction%20Extensions%20Supported%20by%20Oracle-Assisted%20Sub-Network%20Search%20for%20Efficient%20TinyML%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "TruncQuant: Truncation-Ready Quantization for DNNs with Flexible Weight Bit Precision",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "islped2025_truncquant_truncation_ready_quantization_for_dnns_with_flexible_weight",
+    "library_search_url": "https://search.library.wisc.edu/?q=TruncQuant%3A%20Truncation-Ready%20Quantization%20for%20DNNs%20with%20Flexible%20Weight%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22TruncQuant%3A%20Truncation-Ready%20Quantization%20for%20DNNs%20with%20Flexible%20Weight%20Bit%20Precision%22%202025&highlight=true&returnType=SEARCH"
+  }
+]

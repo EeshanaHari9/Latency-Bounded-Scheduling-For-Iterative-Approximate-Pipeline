@@ -1,0 +1,9 @@
+Title: SpecMamba: Accelerating Mamba Inference on FPGA with Speculative Decoding
+Conference: ICCAD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=SpecMamba%3A%20Accelerating%20Mamba%20Inference%20on%20FPGA%20with%20Speculative%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22SpecMamba%3A%20Accelerating%20Mamba%20Inference%20on%20FPGA%20with%20Speculative%20Decoding%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22SpecMamba%3A%20Accelerating%20Mamba%20Inference%20on%20FPGA%20with%20Speculative%20Decoding%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding

@@ -1,0 +1,72 @@
+[
+  {
+    "title": "DMP-BFP: Dynamic Mixed-Precision Block Floating-Point and Exponent-Guided Precision Adjustment",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccd2025_dmp_bfp_dynamic_mixed_precision_block_floating_point_and_exponent_guid",
+    "library_search_url": "https://search.library.wisc.edu/?q=DMP-BFP%3A%20Dynamic%20Mixed-Precision%20Block%20Floating-Point%20and%20Exponent-Guided%20Precision%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22DMP-BFP%3A%20Dynamic%20Mixed-Precision%20Block%20Floating-Point%20and%20Exponent-Guided%20Precision%20Adjustment%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Early Termination with Activation Sign Prediction for Energy-Efficient CNN Inference Using Sum-of-Power-of-Two Quantization",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccd2025_early_termination_with_activation_sign_prediction_for_energy_efficient",
+    "library_search_url": "https://search.library.wisc.edu/?q=Early%20Termination%20with%20Activation%20Sign%20Prediction%20for%20Energy-Efficient%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Early%20Termination%20with%20Activation%20Sign%20Prediction%20for%20Energy-Efficient%20CNN%20Inference%20Using%20Sum-of-Power-of-Two%20Quantization%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Enhancing Transformer Inference Efficiency on FPGA through Fully Fusion and Integer-Only Quantization Techniques",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccd2025_enhancing_transformer_inference_efficiency_on_fpga_through_fully_fusio",
+    "library_search_url": "https://search.library.wisc.edu/?q=Enhancing%20Transformer%20Inference%20Efficiency%20on%20FPGA%20through%20Fully%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Enhancing%20Transformer%20Inference%20Efficiency%20on%20FPGA%20through%20Fully%20Fusion%20and%20Integer-Only%20Quantization%20Techniques%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Flame: A Multiplier-Free LLM Accelerator with Dynamic Block Floating Point",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccd2025_flame_a_multiplier_free_llm_accelerator_with_dynamic_block_floating_po",
+    "library_search_url": "https://search.library.wisc.edu/?q=Flame%3A%20A%20Multiplier-Free%20LLM%20Accelerator%20with%20Dynamic%20Block%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Flame%3A%20A%20Multiplier-Free%20LLM%20Accelerator%20with%20Dynamic%20Block%20Floating%20Point%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "Hardware Efficient Multiplier design using an Optimal mix of Approximate Booth Encodings",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "iccd2025_hardware_efficient_multiplier_design_using_an_optimal_mix_of_approxima",
+    "library_search_url": "https://search.library.wisc.edu/?q=Hardware%20Efficient%20Multiplier%20design%20using%20an%20Optimal%20mix%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Hardware%20Efficient%20Multiplier%20design%20using%20an%20Optimal%20mix%20of%20Approximate%20Booth%20Encodings%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "PACE-lite: Compact and Efficient Piecewise Polynomial Approximation for Transformer Nonlinearity Acceleration",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "iccd2025_pace_lite_compact_and_efficient_piecewise_polynomial_approximation_for",
+    "library_search_url": "https://search.library.wisc.edu/?q=PACE-lite%3A%20Compact%20and%20Efficient%20Piecewise%20Polynomial%20Approximation%20for%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22PACE-lite%3A%20Compact%20and%20Efficient%20Piecewise%20Polynomial%20Approximation%20for%20Transformer%20Nonlinearity%20Acceleration%22%202025&highlight=true&returnType=SEARCH"
+  },
+  {
+    "title": "QuFi: Adaptive Tiled Gustavson Output Reuse for Edge Sparse DNN Accelerators",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "iccd2025_qufi_adaptive_tiled_gustavson_output_reuse_for_edge_sparse_dnn_acceler",
+    "library_search_url": "https://search.library.wisc.edu/?q=QuFi%3A%20Adaptive%20Tiled%20Gustavson%20Output%20Reuse%20for%20Edge%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22QuFi%3A%20Adaptive%20Tiled%20Gustavson%20Output%20Reuse%20for%20Edge%20Sparse%20DNN%20Accelerators%22%202025&highlight=true&returnType=SEARCH"
+  }
+]

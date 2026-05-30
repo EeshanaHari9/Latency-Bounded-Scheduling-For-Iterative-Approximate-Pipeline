@@ -1,0 +1,9 @@
+Title: RGHT-Q: Reconfigurable GEMM Unit for Heterogeneous-Homogeneous Tensor Quantization
+Conference: DATE_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=RGHT-Q%3A%20Reconfigurable%20GEMM%20Unit%20for%20Heterogeneous-Homogeneous%20Tensor%20Quantization%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22RGHT-Q%3A%20Reconfigurable%20GEMM%20Unit%20for%20Heterogeneous-Homogeneous%20Tensor%20Quantization%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22RGHT-Q%3A%20Reconfigurable%20GEMM%20Unit%20for%20Heterogeneous-Homogeneous%20Tensor%20Quantization%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10992638

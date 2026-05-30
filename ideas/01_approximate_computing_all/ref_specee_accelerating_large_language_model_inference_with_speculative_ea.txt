@@ -1,0 +1,5 @@
+Title: SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=SpecEE%3A%20Accelerating%20Large%20Language%20Model%20Inference%20with%20Speculative%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22SpecEE%3A%20Accelerating%20Large%20Language%20Model%20Inference%20with%20Speculative%20Early%20Exiting%22&startPage=0&pageSize=25

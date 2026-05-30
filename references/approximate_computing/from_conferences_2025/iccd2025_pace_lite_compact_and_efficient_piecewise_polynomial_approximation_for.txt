@@ -1,0 +1,9 @@
+Title: PACE-lite: Compact and Efficient Piecewise Polynomial Approximation for Transformer Nonlinearity Acceleration
+Conference: ICCD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=PACE-lite%3A%20Compact%20and%20Efficient%20Piecewise%20Polynomial%20Approximation%20for%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22PACE-lite%3A%20Compact%20and%20Efficient%20Piecewise%20Polynomial%20Approximation%20for%20Transformer%20Nonlinearity%20Acceleration%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22PACE-lite%3A%20Compact%20and%20Efficient%20Piecewise%20Polynomial%20Approximation%20for%20Transformer%20Nonlinearity%20Acceleration%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding

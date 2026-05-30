@@ -1,0 +1,9 @@
+Title: Early Termination with Activation Sign Prediction for Energy-Efficient CNN Inference Using Sum-of-Power-of-Two Quantization
+Conference: ICCD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=Early%20Termination%20with%20Activation%20Sign%20Prediction%20for%20Energy-Efficient%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Early%20Termination%20with%20Activation%20Sign%20Prediction%20for%20Energy-Efficient%20CNN%20Inference%20Using%20Sum-of-Power-of-Two%20Quantization%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22Early%20Termination%20with%20Activation%20Sign%20Prediction%20for%20Energy-Efficient%20CNN%20Inference%20Using%20Sum-of-Power-of-Two%20Quantization%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11310786/proceeding

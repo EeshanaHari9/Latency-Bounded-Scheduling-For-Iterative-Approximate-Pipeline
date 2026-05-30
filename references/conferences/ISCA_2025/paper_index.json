@@ -1,0 +1,74 @@
+[
+  {
+    "title": "ANSMET: Approximate Nearest Neighbor Search with Near-Memory Processing and Hybrid Early Termination",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "isca2025_ansmet_approximate_nearest_neighbor_search_with_near_memory_processing",
+    "library_search_url": "https://search.library.wisc.edu/?q=ANSMET%3A%20Approximate%20Nearest%20Neighbor%20Search%20with%20Near-Memory%20Processing%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22ANSMET%3A%20Approximate%20Nearest%20Neighbor%20Search%20with%20Near-Memory%20Processing%20and%20Hybrid%20Early%20Termination%22&startPage=0&pageSize=25"
+  },
+  {
+    "title": "AQB8: Energy-Efficient Ray Tracing Accelerator through Multi-Level Quantization",
+    "ac": true,
+    "modern": false,
+    "local_pdf": null,
+    "slug": "isca2025_aqb8_energy_efficient_ray_tracing_accelerator_through_multi_level_quan",
+    "library_search_url": "https://search.library.wisc.edu/?q=AQB8%3A%20Energy-Efficient%20Ray%20Tracing%20Accelerator%20through%20Multi-Level%20Quantization%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22AQB8%3A%20Energy-Efficient%20Ray%20Tracing%20Accelerator%20through%20Multi-Level%20Quantization%22&startPage=0&pageSize=25"
+  },
+  {
+    "title": "LightNobel: Improving Sequence Length Limitation in Protein Structure Prediction Model via Adaptive Activation Quantization",
+    "ac": true,
+    "modern": true,
+    "arxiv": "2411.05282",
+    "local_pdf": null,
+    "slug": "isca2025_lightnobel_improving_sequence_length_limitation_in_protein_structure_p",
+    "library_search_url": "https://arxiv.org/pdf/2411.05282.pdf",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22LightNobel%3A%20Improving%20Sequence%20Length%20Limitation%20in%20Protein%20Structure%20Prediction%20Model%20via%20Adaptive%20Activation%20Quantization%22&startPage=0&pageSize=25"
+  },
+  {
+    "title": "MicroScopiQ: Accelerating Foundational Models through Outlier-Aware Microscaling Quantization",
+    "ac": true,
+    "modern": true,
+    "arxiv": "2411.05282",
+    "local_pdf": "isca2025_microscopiq_accelerating_foundational_models_through_outlier_aware_mic.pdf",
+    "slug": "isca2025_microscopiq_accelerating_foundational_models_through_outlier_aware_mic",
+    "library_search_url": "https://arxiv.org/pdf/2411.05282.pdf",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22MicroScopiQ%3A%20Accelerating%20Foundational%20Models%20through%20Outlier-Aware%20Microscaling%20Quantization%22&startPage=0&pageSize=25"
+  },
+  {
+    "title": "Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "isca2025_oaken_fast_and_efficient_llm_serving_with_online_offline_hybrid_kv_cac",
+    "library_search_url": "https://search.library.wisc.edu/?q=Oaken%3A%20Fast%20and%20Efficient%20LLM%20Serving%20with%20Online-Offline%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22Oaken%3A%20Fast%20and%20Efficient%20LLM%20Serving%20with%20Online-Offline%20Hybrid%20KV%20Cache%20Quantization%22&startPage=0&pageSize=25"
+  },
+  {
+    "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "isca2025_specee_accelerating_large_language_model_inference_with_speculative_ea",
+    "library_search_url": "https://search.library.wisc.edu/?q=SpecEE%3A%20Accelerating%20Large%20Language%20Model%20Inference%20with%20Speculative%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22SpecEE%3A%20Accelerating%20Large%20Language%20Model%20Inference%20with%20Speculative%20Early%20Exiting%22&startPage=0&pageSize=25"
+  },
+  {
+    "title": "Process Only Where You Look: Hardware and Algorithm Co-optimization for Efficient Gaze-Tracked Foveated Rendering in Virtual Reality",
+    "ac": true,
+    "modern": true,
+    "local_pdf": null,
+    "slug": "isca2025_process_only_where_you_look_hardware_and_algorithm_co_optimization_for",
+    "library_search_url": "https://search.library.wisc.edu/?q=Process%20Only%20Where%20You%20Look%3A%20Hardware%20and%20Algorithm%202025",
+    "proceedings_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053",
+    "publisher_search_url": "https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22Process%20Only%20Where%20You%20Look%3A%20Hardware%20and%20Algorithm%20Co-optimization%20for%20Efficient%20Gaze-Tracked%20Foveated%20Rendering%20in%20Virtual%20Reality%22&startPage=0&pageSize=25"
+  }
+]

@@ -1,0 +1,5 @@
+Title: BitMoD: Bit-serial Mixture-of-Datatype LLM Acceleration
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=BitMoD%3A%20Bit-serial%20Mixture-of-Datatype%20LLM%20Acceleration%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22BitMoD%3A%20Bit-serial%20Mixture-of-Datatype%20LLM%20Acceleration%22%202025&highlight=true&returnType=SEARCH

@@ -1,0 +1,9 @@
+Title: Hybrid Systolic Array Accelerator with Optimized Dataflow for Edge Large Language Model Inference
+Conference: ISLPED_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=Hybrid%20Systolic%20Array%20Accelerator%20with%20Optimized%20Dataflow%20for%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22Hybrid%20Systolic%20Array%20Accelerator%20with%20Optimized%20Dataflow%20for%20Edge%20Large%20Language%20Model%20Inference%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22Hybrid%20Systolic%20Array%20Accelerator%20with%20Optimized%20Dataflow%20for%20Edge%20Large%20Language%20Model%20Inference%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/11261780/

@@ -1,0 +1,9 @@
+Title: R2T-Tiny: Runtime-Reconfigurable Throughput-Optimized TinyML for Hybrid Inference
+Conference: ICCAD_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=R2T-Tiny%3A%20Runtime-Reconfigurable%20Throughput-Optimized%20TinyML%20for%20Hybrid%20Inference%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22R2T-Tiny%3A%20Runtime-Reconfigurable%20Throughput-Optimized%20TinyML%20for%20Hybrid%20Inference%22%202025&highlight=true&returnType=SEARCH
+3. IEEE/ACM search (hostname proxy): https://ieeexplore-ieee-org.ezproxy.library.wisc.edu/search/searchresult.jsp?queryText=%22R2T-Tiny%3A%20Runtime-Reconfigurable%20Throughput-Optimized%20TinyML%20for%20Hybrid%20Inference%22%202025&highlight=true&returnType=SEARCH
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/xpl/conhome/11240608/proceeding

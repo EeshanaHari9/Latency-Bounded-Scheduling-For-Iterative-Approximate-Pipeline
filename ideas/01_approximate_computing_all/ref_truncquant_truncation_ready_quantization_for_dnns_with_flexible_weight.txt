@@ -1,0 +1,5 @@
+Title: TruncQuant: Truncation-Ready Quantization for DNNs with Flexible Weight Bit Precision
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=TruncQuant%3A%20Truncation-Ready%20Quantization%20for%20DNNs%20with%20Flexible%20Weight%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22TruncQuant%3A%20Truncation-Ready%20Quantization%20for%20DNNs%20with%20Flexible%20Weight%20Bit%20Precision%22%202025&highlight=true&returnType=SEARCH

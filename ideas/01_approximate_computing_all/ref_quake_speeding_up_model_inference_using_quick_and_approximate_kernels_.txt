@@ -1,0 +1,5 @@
+Title: QuAKE: Speeding up Model Inference Using Quick and Approximate Kernels for Exponential Non-Linearities
+PDF not found locally.
+
+UW Library search: https://search.library.wisc.edu/?q=QuAKE%3A%20Speeding%20up%20Model%20Inference%20Using%20Quick%20and%202025
+Publisher search: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=%22QuAKE%3A%20Speeding%20up%20Model%20Inference%20Using%20Quick%20and%20Approximate%20Kernels%20for%20Exponential%20Non-Linearities%22%202025&highlight=true&returnType=SEARCH

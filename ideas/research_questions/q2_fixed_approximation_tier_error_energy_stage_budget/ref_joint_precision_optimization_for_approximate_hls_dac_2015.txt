@@ -1,0 +1,6 @@
+Title: Joint precision optimization for approximate HLS (DAC 2015)
+PDF not found locally.
+
+IEEE/ACM: https://ieeexplore.ieee.org/document/7167244
+UW proxy: https://patron.library.wisc.edu/authn/splash?url=https://ieeexplore.ieee.org/document/7167244
+Note: Li et al. — precision vs energy in approximate HLS.

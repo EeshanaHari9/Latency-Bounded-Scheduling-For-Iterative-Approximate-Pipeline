@@ -1,0 +1,6 @@
+Title: ASIS: Anytime iterative approximate computing (ACM TAC 2022)
+PDF not found locally.
+
+IEEE/ACM: https://dl.acm.org/doi/10.1145/3508392
+UW proxy: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/10.1145/3508392
+Note: Soni et al. — anytime quality under iterative refinement.

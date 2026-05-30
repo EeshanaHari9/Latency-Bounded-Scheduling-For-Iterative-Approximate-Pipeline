@@ -1,0 +1,9 @@
+Title: Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization
+Conference: ISCA_2025
+PDF not available locally (likely paywalled).
+
+Try these in order (sign in with NetID when prompted):
+1. UW Library search (easiest): https://search.library.wisc.edu/?q=Oaken%3A%20Fast%20and%20Efficient%20LLM%20Serving%20with%20Online-Offline%202025
+2. IEEE/ACM search via UW login: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/action/doSearch?AllField=%22Oaken%3A%20Fast%20and%20Efficient%20LLM%20Serving%20with%20Online-Offline%20Hybrid%20KV%20Cache%20Quantization%22&startPage=0&pageSize=25
+3. IEEE/ACM search (hostname proxy): https://dl-acm-org.ezproxy.library.wisc.edu/action/doSearch?AllField=%22Oaken%3A%20Fast%20and%20Efficient%20LLM%20Serving%20with%20Online-Offline%20Hybrid%20KV%20Cache%20Quantization%22&startPage=0&pageSize=25
+4. Full proceedings via UW login: https://patron.library.wisc.edu/authn/splash?url=https://dl.acm.org/doi/proceedings/10.1145/3695053
